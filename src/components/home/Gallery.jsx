@@ -13,7 +13,7 @@ export default function Gallery() {
       category: "Wedding",
       title: "Royal Wedding Ceremony",
       image:
-        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
+        "https://i.pinimg.com/736x/40/59/11/405911215aa4ab5f3b2201f7cb0b28c4.jpg",
       span: "md:col-span-2 md:row-span-2",
     },
     {
@@ -21,7 +21,7 @@ export default function Gallery() {
       category: "Reception",
       title: "Elegant Reception Hall",
       image:
-        "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80",
+        "https://i.pinimg.com/736x/8c/7d/1a/8c7d1aca113e6b367c7bd91b89f1eb34.jpg",
       span: "md:col-span-1 md:row-span-1",
     },
     {
@@ -29,7 +29,7 @@ export default function Gallery() {
       category: "Decor",
       title: "Luxury Floral Decorations",
       image:
-        "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80",
+        "https://i.pinimg.com/control1/1200x/e2/93/cd/e293cd60ed704788f5bad4b29e767602.jpg",
       span: "md:col-span-1 md:row-span-1",
     },
     {
@@ -37,7 +37,7 @@ export default function Gallery() {
       category: "Wedding",
       title: "Beautiful Mandap Setup",
       image:
-        "https://images.unsplash.com/photo-1544033527-b192daee1f5b?auto=format&fit=crop&w=600&q=80",
+        "https://i.pinimg.com/736x/b6/dc/ed/b6dced1cde30f5b2508dab8e338d781f.jpg",
       span: "md:col-span-1 md:row-span-1",
     },
     {
@@ -45,7 +45,7 @@ export default function Gallery() {
       category: "Reception",
       title: "Grand Dining Arrangement",
       image:
-        "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80",
+        "https://i.pinimg.com/1200x/90/f7/f5/90f7f520a85694cea54013ab9362884f.jpg",
       span: "md:col-span-1 md:row-span-1",
     },
     {
@@ -53,7 +53,7 @@ export default function Gallery() {
       category: "Engagement",
       title: "Romantic Engagement Ceremony",
       image:
-        "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
+        "https://i.pinimg.com/736x/34/ac/ac/34acacec365c9bc851da3d93c5713597.jpg",
       span: "md:col-span-1 md:row-span-2",
     },
     {
@@ -61,7 +61,7 @@ export default function Gallery() {
       category: "Decor",
       title: "Premium Stage Decoration",
       image:
-        "https://i.pinimg.com/1200x/fc/be/59/fcbe59a8061fd7e9e0542956321820f3.jpg",
+        "https://i.pinimg.com/control1/1200x/51/f5/d5/51f5d5e8f0c321579f6e3670cd2ade35.jpg",
       span: "md:col-span-1 md:row-span-1",
     },
     {
@@ -69,7 +69,7 @@ export default function Gallery() {
       category: "Wedding",
       title: "Magical Wedding Moments",
       image:
-        "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80",
+        "https://i.pinimg.com/control1/1200x/74/7c/5d/747c5d8b5ffe5c97d035ca38a879a49b.jpg",
       span: "md:col-span-1 md:row-span-1",
     },
   ];
