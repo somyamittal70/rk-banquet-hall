@@ -58,7 +58,7 @@ export default function WhyChooseUsSection() {
             <div className="rounded-[28px] overflow-hidden border border-[#3A2A18]">
               <img
                 src="https://i.pinimg.com/736x/60/6a/a8/606aa894296fce63d62022949c92ff01.jpg"
-                alt="Grand Palace Banquet Hall interior"
+                alt="Grand Palace Banquet Hall interior"Us
                 className="w-full h-[520px] object-cover"
               />
             </div>
@@ -68,7 +68,7 @@ export default function WhyChooseUsSection() {
               <h3
                 className="text-4xl text-[#D9C8A9]"
                 style={{
-                  fontFamily: "Cormorant",
+                  fontFamily: "marcelleus-sc",
                 }}
               >
                 12+
@@ -88,7 +88,7 @@ export default function WhyChooseUsSection() {
               <h2
                 className="uppercase tracking-[4px] text-sm text-[#D9C8A9]"
                 style={{
-                  fontFamily: "Cormorant",
+                  fontFamily: "marcelleus-sc",
                 }}
               >
                 Why Choose Us
@@ -98,7 +98,7 @@ export default function WhyChooseUsSection() {
             <h3
               className="text-4xl md:text-[40px] text-[#F0E6D2] leading-tight mb-10"
               style={{
-                fontFamily: "Cormorant",
+                fontFamily: "marcelleus-sc",
               }}
             >
               Where every celebration meets timeless elegance
@@ -131,7 +131,7 @@ export default function WhyChooseUsSection() {
                     <span
                       className="absolute -top-1 right-0 text-6xl text-[#D9C8A9] opacity-[0.06] group-hover:opacity-[0.12] duration-300 select-none"
                       style={{
-                        fontFamily: "Cormorant",
+                        fontFamily: "marcelleus-sc",
                       }}
                     >
                       {item.number}

@@ -86,7 +86,7 @@ export default function FacilitiesSection() {
               <h2
                 className="uppercase tracking-[4px] text-sm text-[#D9C8A9]"
                 style={{
-                  fontFamily: "Cormorant Garamond",
+                  fontFamily: "marcelleus-sc",
                 }}
               >
                 Our Facilities
@@ -169,7 +169,7 @@ export default function FacilitiesSection() {
                   <h2
                     className="text-4xl text-[#D9C8A9]"
                     style={{
-                      fontFamily: "Cormorant Garamond",
+                      fontFamily: "marcelleus-sc",
                     }}
                   >
                     {item.number}
