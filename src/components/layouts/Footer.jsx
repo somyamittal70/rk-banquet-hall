@@ -5,36 +5,36 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[#0B0B0B] text-[#F8F6F2] font-poppins border-t border-[#C8A96A]/30 pt-20 pb-8 overflow-hidden">
+    <footer className="relative bg-[#F5EDE0] text-[#6B4423] font-poppins border-t border-[#D9C8A9] pt-20 pb-8 overflow-hidden">
       {/* Subtle ambient background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-px bg-gradient-to-r from-transparent via-[#C8A96A]/50 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-px bg-gradient-to-r from-transparent via-[#D9C8A9] to-transparent" />
       
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 mb-16">
           
-          {/* Column 1: Brand & About (4/12 width) */}
+          {/* Column 1: Brand & About (5/12 width) */}
           <div className="md:col-span-5 flex flex-col space-y-6">
             <a href="/" className="inline-block self-start select-none group">
               <img
                 src="logo.png"
                 alt="RK Banquet Hall Logo"
-                className="h-24 w-auto object-contain brightness-110 contrast-105 transition-transform duration-500 group-hover:scale-105"
+                className="h-24 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </a>
-            <p className="text-[#9CA3AF] text-sm leading-relaxed max-w-sm font-light">
+            <p className="text-[#6B4423]/80 text-sm leading-relaxed max-w-sm font-light">
               Creating unforgettable wedding celebrations with elegance, luxury,
               and exceptional hospitality. From engagements and receptions to
               grand weddings, RK Banquet Hall transforms every occasion into a
               timeless memory.
             </p>
 
-            {/* Social Buttons: Permanent Authentic Brand Colors with Premium UI */}
+            {/* Social Buttons: Permanent Authentic Brand Colors with Premium Light UI */}
             <div className="flex items-center space-x-4 pt-2">
               {/* Facebook */}
               <a
                 href="#"
-                className="flex items-center justify-center w-11 h-11 rounded-full border border-[#1877F2]/40 text-[#1877F2] bg-[#1877F2]/5 backdrop-blur-sm transition-all duration-300 hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] hover:-translate-y-1 shadow-lg shadow-[#1877F2]/5 hover:shadow-[#1877F2]/20"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-[#1877F2]/30 text-[#1877F2] bg-white transition-all duration-300 hover:bg-[#1877F2] hover:text-white hover:border-[#1877F2] hover:-translate-y-1 shadow-sm hover:shadow-md"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ export default function Footer() {
               {/* Instagram */}
               <a
                 href="#"
-                className="flex items-center justify-center w-11 h-11 rounded-full border border-[#E1306C]/40 text-[#E1306C] bg-[#E1306C]/5 backdrop-blur-sm transition-all duration-300 hover:bg-[#E1306C] hover:text-white hover:border-[#E1306C] hover:-translate-y-1 shadow-lg shadow-[#E1306C]/5 hover:shadow-[#E1306C]/20"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-[#E1306C]/30 text-[#E1306C] bg-white transition-all duration-300 hover:bg-[#E1306C] hover:text-white hover:border-[#E1306C] hover:-translate-y-1 shadow-sm hover:shadow-md"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ export default function Footer() {
               {/* WhatsApp */}
               <a
                 href="#"
-                className="flex items-center justify-center w-11 h-11 rounded-full border border-[#25D366]/40 text-[#25D366] bg-[#25D366]/5 backdrop-blur-sm transition-all duration-300 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:-translate-y-1 shadow-lg shadow-[#25D366]/5 hover:shadow-[#25D366]/20"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-[#25D366]/30 text-[#25D366] bg-white transition-all duration-300 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:-translate-y-1 shadow-sm hover:shadow-md"
                 aria-label="WhatsApp"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -72,9 +72,9 @@ export default function Footer() {
 
           {/* Column 2: Quick Links (3/12 width) */}
           <div className="md:col-span-3 md:pl-4">
-            <h3 className="font-cinzel text-white text-sm font-semibold tracking-widest uppercase mb-6 relative">
+            <h3 className="font-cinzel text-[#6B4423] text-sm font-semibold tracking-widest uppercase mb-6 relative">
               Quick Links
-              <span className="block w-8 h-px bg-[#C8A96A] mt-2" />
+              <span className="block w-8 h-px bg-[#D9C8A9] mt-2" />
             </h3>
             <ul className="space-y-3.5 text-sm">
               {[
@@ -87,9 +87,9 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-[#9CA3AF] hover:text-[#C8A96A] transition-colors duration-300 flex items-center group text-left"
+                    className="text-[#6B4423]/80 hover:text-[#6B4423] font-medium transition-colors duration-300 flex items-center group text-left"
                   >
-                    <ArrowRight className="w-3 h-3 text-[#C8A96A] mr-0 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:mr-2 group-hover:translate-x-0" />
+                    <ArrowRight className="w-3 h-3 text-[#6B4423] mr-0 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:mr-2 group-hover:translate-x-0" />
                     <span className="transition-transform duration-300 group-hover:translate-x-0.5">
                       {link.name}
                     </span>
@@ -101,38 +101,38 @@ export default function Footer() {
 
           {/* Column 3: Contact Info (4/12 width) */}
           <div className="md:col-span-4">
-            <h3 className="font-cinzel text-white text-sm font-semibold tracking-widest uppercase mb-6 relative">
+            <h3 className="font-cinzel text-[#6B4423] text-sm font-semibold tracking-widest uppercase mb-6 relative">
               Get In Touch
-              <span className="block w-8 h-px bg-[#C8A96A] mt-2" />
+              <span className="block w-8 h-px bg-[#D9C8A9] mt-2" />
             </h3>
-            <ul className="space-y-4 text-sm text-[#9CA3AF]">
+            <ul className="space-y-4 text-sm text-[#6B4423]/80">
               <li className="flex items-start gap-3.5 group">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#C8A96A]/10 text-[#C8A96A] flex-shrink-0 mt-0.5 transition-colors duration-300 group-hover:bg-[#C8A96A]/20">
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#FFFFFF] border border-[#D9C8A9] text-[#6B4423] flex-shrink-0 mt-0.5 transition-colors duration-300 group-hover:bg-[#D9C8A9]/30">
                   <MapPin className="w-4 h-4" strokeWidth={2} />
                 </div>
-                <span className="leading-relaxed transition-colors duration-300 group-hover:text-[#F8F6F2]">
+                <span className="leading-relaxed transition-colors duration-300 group-hover:text-[#6B4423]">
                   74, Rakesh Marg, Pocket K, Nehru Nagar III, Nehru Nagar,
                   Ghaziabad, Uttar Pradesh, 201001
                 </span>
               </li>
               <li className="flex items-center gap-3.5 group">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#C8A96A]/10 text-[#C8A96A] flex-shrink-0 transition-colors duration-300 group-hover:bg-[#C8A96A]/20">
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#FFFFFF] border border-[#D9C8A9] text-[#6B4423] flex-shrink-0 transition-colors duration-300 group-hover:bg-[#D9C8A9]/30">
                   <Phone className="w-4 h-4" strokeWidth={2} />
                 </div>
                 <a
                   href="tel:+919891018675"
-                  className="transition-colors duration-300 group-hover:text-[#F8F6F2]"
+                  className="transition-colors duration-300 group-hover:text-[#6B4423]"
                 >
                   +91-9891018675
                 </a>
               </li>
               <li className="flex items-center gap-3.5 group">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#C8A96A]/10 text-[#C8A96A] flex-shrink-0 transition-colors duration-300 group-hover:bg-[#C8A96A]/20">
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-[#FFFFFF] border border-[#D9C8A9] text-[#6B4423] flex-shrink-0 transition-colors duration-300 group-hover:bg-[#D9C8A9]/30">
                   <Mail className="w-4 h-4" strokeWidth={2} />
                 </div>
                 <a
                   href="mailto:events@rkbanquet.com"
-                  className="transition-colors duration-300 group-hover:text-[#F8F6F2]"
+                  className="transition-colors duration-300 group-hover:text-[#6B4423]"
                 >
                   events@rkbanquet.com
                 </a>
@@ -142,19 +142,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar Divider */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-[#6B7280]/20 to-transparent mb-8" />
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-[#D9C8A9] to-transparent mb-8" />
 
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-[#6B7280] space-y-4 sm:space-y-0 font-light tracking-wide">
+        <div className="flex flex-col sm:flex-row justify-between items-center text-xs text-[#6B4423]/70 space-y-4 sm:space-y-0 font-light tracking-wide">
           <div>
-            &copy; {currentYear} <span className="text-white/80 font-medium">RK Banquet Hall</span>. All Rights Reserved.
+            &copy; {currentYear} <span className="text-[#6B4423] font-semibold">RK Banquet Hall</span>. All Rights Reserved.
           </div>
           <div className="flex space-x-6">
             <a
               href="https://deboxtechnology.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#C8A96A] transition-colors duration-300 relative after:content-[''] after:block after:w-0 after:h-px after:bg-[#C8A96A] after:transition-all after:duration-300 hover:after:w-full"
+              className="hover:text-[#6B4423] transition-colors duration-300 relative after:content-[''] after:block after:w-0 after:h-px after:bg-[#6B4423] after:transition-all after:duration-300 hover:after:w-full"
             >
               Developed By Debox Technology
             </a>

@@ -15,19 +15,19 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
 
       {/* Sliding side panel — enters from right, exits to right */}
       <div
-        className={`fixed top-0 right-0 h-full w-[78%] xs:w-[70%] sm:w-[380px] z-[9999] bg-[#0F0F0F] overflow-y-auto lg:hidden transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`fixed top-0 right-0 h-full w-[78%] xs:w-[70%] sm:w-[380px] z-[9999] bg-[#FFFFFF] overflow-y-auto lg:hidden transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         {/* Subtle luxury accent border */}
-        <div className="absolute inset-3 opacity-5 pointer-events-none border border-[#C8A96A]" />
+        <div className="absolute inset-3 opacity-20 pointer-events-none border border-[#D9C8A9]" />
 
         {/* Close button */}
         <button
           onClick={() => setIsOpen(false)}
           type="button"
           aria-label="Close navigation menu"
-          className="absolute top-4 right-4 sm:top-5 sm:right-5 z-10 inline-flex items-center justify-center w-10 h-10 text-white hover:text-[#C8A96A] transition-colors duration-300"
+          className="absolute top-4 right-4 sm:top-5 sm:right-5 z-10 inline-flex items-center justify-center w-10 h-10 text-[#6B4423] hover:text-[#D9C8A9] transition-colors duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`text-lg sm:text-xl uppercase tracking-widest transition-colors duration-300 font-cinzel ${
-                  isActive ? "text-[#C8A96A] font-bold" : "text-white/80 hover:text-[#C8A96A]"
+                  isActive ? "text-[#D9C8A9] font-bold" : "text-[#D9C8A9]/70 hover:text-[#D9C8A9]"
                 }`}
               >
                 {link.name}
@@ -66,7 +66,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-white bg-[#A67C3D] hover:bg-[#C8A96A] transition-colors duration-300 border border-[#A67C3D]"
+              className="block w-full text-center px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#FFFFFF] bg-[#6B4423] hover:bg-[#D9C8A9] hover:text-[#6B4423] transition-colors duration-300 border border-[#6B4423]"
             >
               Book an Event
             </Link>
@@ -113,8 +113,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-all duration-300 ${
         isScrolled
-          ? "bg-[#0F0F0F]/95 border-[#C8A96A]/20 shadow-xl"
-          : "bg-[#0F0F0F]/70 border-transparent"
+          ? "bg-[#F5EDE0]/95 border-[#D9C8A9] shadow-md"
+          : "bg-[#F5EDE0]/80 border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -139,12 +139,12 @@ export default function Header() {
                   key={link.name}
                   to={link.path}
                   className={`relative py-2 font-medium text-[13px] xl:text-sm uppercase tracking-widest transition-colors duration-300 group whitespace-nowrap ${
-                    isActive ? "text-[#C8A96A]" : "text-white/90 hover:text-[#C8A96A]"
+                    isActive ? "text-[#6B4423]" : "text-[#6B4423]/80 hover:text-[#D9C8A9]"
                   }`}
                 >
                   {link.name}
                   <span
-                    className={`absolute bottom-0 left-0 h-[1.5px] bg-[#C8A96A] transition-all duration-300 ease-out ${
+                    className={`absolute bottom-0 left-0 h-[1.5px] bg-[#6B4423] transition-all duration-300 ease-out ${
                       isActive ? "w-full" : "w-0 group-hover:w-full"
                     }`}
                   />
@@ -157,7 +157,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center flex-shrink-0">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-5 py-2.5 xl:px-6 text-[11px] xl:text-xs font-semibold uppercase tracking-widest transition-all duration-300 border bg-transparent text-[#C8A96A] border-[#C8A96A] hover:bg-[#C8A96A] hover:text-white whitespace-nowrap"
+              className="inline-flex items-center justify-center px-5 py-2.5 xl:px-6 text-[11px] xl:text-xs font-semibold uppercase tracking-widest transition-all duration-300 border bg-transparent text-[#6B4423] border-[#6B4423] hover:bg-[#6B4423] hover:text-[#FFFFFF] whitespace-nowrap"
             >
               Book an Event
             </Link>
@@ -168,7 +168,7 @@ export default function Header() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 focus:outline-none text-white hover:text-[#C8A96A] transition-colors duration-300"
+              className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 focus:outline-none text-[#6B4423] hover:text-[#D9C8A9] transition-colors duration-300"
               aria-expanded={isOpen}
               aria-label="Toggle navigation menu"
             >
