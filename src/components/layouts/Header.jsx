@@ -54,7 +54,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`text-lg sm:text-xl uppercase tracking-widest transition-colors duration-300 font-cormonant ${
+                className={`text-lg sm:text-xl uppercase tracking-widest transition-colors duration-300 font-marcelleus-sc ${
                   isActive ? "text-[#D9C8A9] font-bold" : "text-[#D9C8A9]/70 hover:text-[#D9C8A9]"
                 }`}
               >

@@ -68,7 +68,7 @@ export default function WhyChooseUsSection() {
               <h3
                 className="text-4xl text-[#D9C8A9]"
                 style={{
-                  fontFamily: "Cormorant Garamond",
+                  fontFamily: "Cormorant",
                 }}
               >
                 12+
@@ -88,7 +88,7 @@ export default function WhyChooseUsSection() {
               <h2
                 className="uppercase tracking-[4px] text-sm text-[#D9C8A9]"
                 style={{
-                  fontFamily: "Cormorant Garamond",
+                  fontFamily: "Cormorant",
                 }}
               >
                 Why Choose Us
@@ -98,7 +98,7 @@ export default function WhyChooseUsSection() {
             <h3
               className="text-4xl md:text-[40px] text-[#F0E6D2] leading-tight mb-10"
               style={{
-                fontFamily: "Cormorant Garamond",
+                fontFamily: "Cormorant",
               }}
             >
               Where every celebration meets timeless elegance
@@ -131,7 +131,7 @@ export default function WhyChooseUsSection() {
                     <span
                       className="absolute -top-1 right-0 text-6xl text-[#D9C8A9] opacity-[0.06] group-hover:opacity-[0.12] duration-300 select-none"
                       style={{
-                        fontFamily: "Cormorant Garamond",
+                        fontFamily: "Cormorant",
                       }}
                     >
                       {item.number}

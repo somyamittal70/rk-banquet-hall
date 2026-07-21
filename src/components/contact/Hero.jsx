@@ -36,7 +36,7 @@ export default function ContactHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h1 className="font-cormonant text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-[1.12] tracking-wide">
+          <h1 className="font-marcelleus-sc text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-[1.12] tracking-wide">
             Celebrate Your Special Moments <br />
             <span className="text-[#C8A96A]">With Us</span>
           </h1>

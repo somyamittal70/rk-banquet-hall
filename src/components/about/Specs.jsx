@@ -57,11 +57,11 @@ export default function AboutSpecs() {
           <div className="max-w-xl">
             <div className="flex items-center space-x-3 mb-4">
               <span className="w-8 h-[1px] bg-[#A67C3D]" />
-              <span className="font-cormonant text-xs tracking-[0.4em] text-[#A67C3D] uppercase font-bold">
+              <span className="font-marcelleus-sc text-xs tracking-[0.4em] text-[#A67C3D] uppercase font-bold">
                 Our Venue
               </span>
             </div>
-            <h2 className="font-cormonant text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide">
+            <h2 className="font-marcelleus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide">
               Discover The
               <span className="text-[#A67C3D]">
                 {" "}
@@ -109,10 +109,10 @@ export default function AboutSpecs() {
               {/* Left Column: Descriptive Context Block */}
               <div className="lg:col-span-6 flex flex-col justify-between h-full">
                 <div>
-                  <span className="font-cinzel text-xs tracking-[0.3em] text-[#A67C3D] uppercase font-bold block mb-2">
+                  <span className="marcelleus-sc text-xs tracking-[0.3em] text-[#A67C3D] uppercase font-bold block mb-2">
                     {specifications[activeTab].subtitle}
                   </span>
-                  <h3 className="font-cinzelDecorative text-2xl sm:text-3xl font-bold text-[#0F0F0F] tracking-wide mb-6">
+                  <h3 className="marcelleus-sc text-2xl sm:text-3xl font-bold text-[#0F0F0F] tracking-wide mb-6">
                     {specifications[activeTab].title}
                   </h3>
                   <p className="text-gray-600 font-light text-sm sm:text-base leading-relaxed mb-8">

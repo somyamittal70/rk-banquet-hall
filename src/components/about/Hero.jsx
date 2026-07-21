@@ -24,10 +24,10 @@ export default function AboutHero() {
       <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 relative z-20 text-center flex flex-col items-center">
         {/* Primary Impact Headline */}
         {/* Primary Impact Headline */}
-        <h1 className="font-cormonant text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white tracking-wide leading-[1.2] sm:leading-[1.15] mb-4 sm:mb-6">
+        <h1 className="font-marcelleus-sc text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white tracking-wide leading-[1.2] sm:leading-[1.15] mb-4 sm:mb-6">
           Where Every Celebration
           <br />
-          <span className="text-[#C8A96A] font-bold font-cormonant">
+          <span className="text-[#C8A96A] font-bold font-marcelleus-sc">
             Becomes A Timeless Memory
           </span>
         </h1>

@@ -140,7 +140,7 @@ export default function GalleryGrid() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-16 pb-6 border-b border-[#D9C8A9]">
           <div className="flex items-center space-x-3">
             <Layers className="w-4 h-4 text-[#6B4423]" />
-            <span className="font-cormonant text-xs tracking-widest text-[#6B4423] uppercase font-bold">Event Gallery</span>
+            <span className="font-marcelleus-sc text-xs tracking-widest text-[#6B4423] uppercase font-bold">Event Gallery</span>
           </div>
           
           <div className="flex flex-wrap gap-2">
@@ -196,10 +196,10 @@ export default function GalleryGrid() {
                   </div>
 
                   <div>
-                    <span className="font-cormonant text-[9px] tracking-widest text-[#D9C8A9] uppercase font-bold block mb-1">
+                    <span className="font-marcelleus-sc text-[9px] tracking-widest text-[#D9C8A9] uppercase font-bold block mb-1">
                       {item.location}
                     </span>
-                    <h3 className="font-cormonant text-lg sm:text-xl font-medium tracking-wide text-[#FFFFFF]">
+                    <h3 className="font-marcelleus-sc text-lg sm:text-xl font-medium tracking-wide text-[#FFFFFF]">
                       {item.title}
                     </h3>
                   </div>
@@ -244,10 +244,10 @@ export default function GalleryGrid() {
 
               <div className="p-6 bg-[#FFFFFF] border-t border-[#D9C8A9] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <span className="font-cormonant text-[10px] tracking-widest text-[#6B4423] uppercase font-bold block mb-1">
+                  <span className="font-marcelleus-sc text-[10px] tracking-widest text-[#6B4423] uppercase font-bold block mb-1">
                     {selectedMedia.location}
                   </span>
-                  <h4 className="font-cormonant text-xl font-medium tracking-wide text-[#2E2013]">
+                  <h4 className="font-marcelleus-sc text-xl font-medium tracking-wide text-[#2E2013]">
                     {selectedMedia.title}
                   </h4>
                 </div>
