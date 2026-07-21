@@ -69,7 +69,7 @@ export default function AboutPillars() {
               variants={lineVariants}
               className="h-[1px] bg-[#C8A96A]"
             />
-            <span className="font-cinzel text-xs tracking-[0.4em] text-[#C8A96A] uppercase font-bold">
+            <span className="font-cormonant text-xs tracking-[0.4em] text-[#C8A96A] uppercase font-bold">
               Why Choose Us
             </span>
           </div>
@@ -79,7 +79,7 @@ export default function AboutPillars() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-cinzelDecorative text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight tracking-wide"
+            className="font-cormonant text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight tracking-wide"
           >
             What Makes
             <span className="text-[#C8A96A]"> RK Banquet Hall Special</span>
@@ -116,7 +116,7 @@ export default function AboutPillars() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-cinzel text-lg font-semibold text-white tracking-wider mb-4 group-hover:text-[#C8A96A] transition-colors duration-300">
+                  <h3 className="font-cormonant text-lg font-semibold text-white tracking-wider mb-4 group-hover:text-[#C8A96A] transition-colors duration-300">
                     {pillar.title}
                   </h3>
 
@@ -127,7 +127,7 @@ export default function AboutPillars() {
                 </div>
 
                 {/* Corner Decorative Asset Index */}
-                <div className="absolute bottom-4 right-4 font-cinzel text-[10px] tracking-widest text-white/[0.03] uppercase font-bold select-none group-hover:text-[#C8A96A]/10 transition-colors duration-300">
+                <div className="absolute bottom-4 right-4 font-cormonant text-[10px] tracking-widest text-white/[0.03] uppercase font-bold select-none group-hover:text-[#C8A96A]/10 transition-colors duration-300">
                   0{index + 1}
                 </div>
               </motion.div>

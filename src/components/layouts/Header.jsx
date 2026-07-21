@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
+import BookingModal from "./BookingModal";
 
 function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
   return createPortal(
@@ -53,7 +54,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`text-lg sm:text-xl uppercase tracking-widest transition-colors duration-300 font-cinzel ${
+                className={`text-lg sm:text-xl uppercase tracking-widest transition-colors duration-300 font-cormonant ${
                   isActive ? "text-[#D9C8A9] font-bold" : "text-[#D9C8A9]/70 hover:text-[#D9C8A9]"
                 }`}
               >
@@ -83,6 +84,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const currentPath = location.pathname;
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -113,8 +115,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-all duration-300 ${
         isScrolled
-          ? "bg-[#F5EDE0]/95 border-[#D9C8A9] shadow-md"
-          : "bg-[#F5EDE0]/80 border-transparent"
+          ? "bg-[#FFFFFF] border-[#D9C8A9] shadow-md"
+          : "bg-[#FFFFFF] border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,12 +157,12 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center flex-shrink-0">
-            <Link
-              to="/contact"
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="inline-flex items-center justify-center px-5 py-2.5 xl:px-6 text-[11px] xl:text-xs font-semibold uppercase tracking-widest transition-all duration-300 border bg-transparent text-[#6B4423] border-[#6B4423] hover:bg-[#6B4423] hover:text-[#FFFFFF] whitespace-nowrap"
             >
               Book an Event
-            </Link>
+            </button>
           </div>
 
           {/* Mobile / Tablet Menu Toggle (below lg) */}
@@ -214,6 +216,12 @@ export default function Header() {
         setIsOpen={setIsOpen}
         navLinks={navLinks}
         currentPath={currentPath}
+      />
+
+      {/* Render Modal */}
+      <BookingModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
     </header>
   );

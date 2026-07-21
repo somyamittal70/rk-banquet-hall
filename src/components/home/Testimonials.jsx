@@ -69,11 +69,11 @@ export default function Testimonials() {
           <div>
             <div className="flex items-center space-x-3 mb-3">
               <Sparkles className="w-4 h-4 text-[#6B4423]" />
-              <span className="pt-serif text-xs tracking-[0.35em] text-[#6B4423] uppercase font-bold">
+              <span className="marcellus-sc text-xs tracking-[0.35em] text-[#6B4423] uppercase font-bold">
                 Client Journal
               </span>
             </div>
-            <h2 className="pt-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
+            <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
               Celebrated <span className="italic font-normal">Love Stories</span>
             </h2>
           </div>
@@ -110,7 +110,7 @@ export default function Testimonials() {
             
             {/* Background Index Number Stamp */}
             <span
-              className="absolute -bottom-8 -right-0 pt-serif font-bold text-[3rem] text-[#F5EDE0] select-none pointer-events-none transition-transform duration-700 group-hover:scale-105"
+              className="absolute -bottom-8 -right-0 marcellus-sc font-bold text-[3rem] text-[#F5EDE0] select-none pointer-events-none transition-transform duration-700 group-hover:scale-105"
               style={{ lineHeight: 2.3 }}
             >
               0{featuredIndex + 1}
@@ -142,7 +142,7 @@ export default function Testimonials() {
               <Quote className="w-12 h-12 text-[#D9C8A9] mb-6" />
 
               {/* Main Testimonial Body */}
-              <p className="pt-serif italic text-xl sm:text-xl text-[#6B4423] leading-relaxed mb-10 font-medium">
+              <p className="marcellus-sc italic text-xl sm:text-xl text-[#6B4423] leading-relaxed mb-10 font-medium">
                 "{activeReview?.quote}"
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function Testimonials() {
             {/* Author Footer */}
             <div className="relative z-10 pt-6 border-t border-[#D9C8A9]/60 flex items-end justify-between">
               <div>
-                <h3 className="pt-serif text-lg font-bold text-[#6B4423] tracking-wide">
+                <h3 className="marcellus-sc text-lg font-bold text-[#6B4423] tracking-wide">
                   {activeReview?.name}
                 </h3>
                 <p className="text-xs text-[#6B4423]/60 font-light mt-0.5">
@@ -194,7 +194,7 @@ export default function Testimonials() {
                       </span>
                     </div>
 
-                    <h4 className="pt-serif font-bold text-sm text-[#6B4423]">
+                    <h4 className="marcellus-sc font-bold text-sm text-[#6B4423]">
                       {review.name}
                     </h4>
 

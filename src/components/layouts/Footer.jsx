@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Column 2: Quick Links (3/12 width) */}
           <div className="md:col-span-3 md:pl-4">
-            <h3 className="font-cinzel text-[#6B4423] text-sm font-semibold tracking-widest uppercase mb-6 relative">
+            <h3 className="font-cormonant text-[#6B4423] text-sm font-semibold tracking-widest uppercase mb-6 relative">
               Quick Links
               <span className="block w-8 h-px bg-[#D9C8A9] mt-2" />
             </h3>
@@ -101,7 +101,7 @@ export default function Footer() {
 
           {/* Column 3: Contact Info (4/12 width) */}
           <div className="md:col-span-4">
-            <h3 className="font-cinzel text-[#6B4423] text-sm font-semibold tracking-widest uppercase mb-6 relative">
+            <h3 className="font-cormonant text-[#6B4423] text-sm font-semibold tracking-widest uppercase mb-6 relative">
               Get In Touch
               <span className="block w-8 h-px bg-[#D9C8A9] mt-2" />
             </h3>

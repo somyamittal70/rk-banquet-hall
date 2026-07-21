@@ -56,13 +56,13 @@ export default function AboutStory() {
             {/* Mini Label Header */}
             <div className="flex items-center space-x-3 mb-4">
               <span className="w-8 h-[1px] bg-[#A67C3D]" />
-              <span className="font-cinzel text-xs tracking-[0.4em] text-[#A67C3D] uppercase font-bold">
+              <span className="font-cormonant text-xs tracking-[0.4em] text-[#A67C3D] uppercase font-bold">
                 The Story
               </span>
             </div>
 
             {/* Title Statement */}
-            <h2 className="font-cinzelDecorative text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide mb-6">
+            <h2 className="font-cormonant text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide mb-6">
               Creating Beautiful Celebrations with
               <span className="text-[#A67C3D]"> Passion & Perfection</span>
             </h2>
@@ -89,7 +89,7 @@ export default function AboutStory() {
                         <IconComponent strokeWidth={1.5} className="w-4 h-4" />
                       </div>
                       <div>
-                        <span className="font-cinzel text-sm font-bold text-[#A67C3D] tracking-widest block mb-0.5">
+                        <span className="font-cormonant text-sm font-bold text-[#A67C3D] tracking-widest block mb-0.5">
                           {item.year} — {item.title}
                         </span>
                         <p className="text-gray-500 font-light text-xs sm:text-sm leading-relaxed max-w-xl">

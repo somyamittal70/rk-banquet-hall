@@ -108,7 +108,7 @@ export default function Services() {
         {/* Section Header with Slide Navigation controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="pt-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
+            <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
               Everything You Need For A{" "}
               <span className="text-[#6B4423]/80">
                 Perfect Wedding Celebration
@@ -164,13 +164,13 @@ export default function Services() {
                 <div className="p-4 sm:p-8 flex flex-col justify-between min-h-[240px]">
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <span className="pt-serif text-lg font-bold text-[#6B4423]/40">
+                      <span className="marcellus-sc text-lg font-bold text-[#6B4423]/40">
                         {service.num}
                       </span>
                       <span className="w-8 h-[1px] bg-[#D9C8A9]" />
                     </div>
 
-                    <h3 className="pt-serif text-lg font-semibold text-[#6B4423] tracking-wider mb-3 group-hover:text-[#6B4423] transition-colors duration-300">
+                    <h3 className="marcellus-sc text-lg font-semibold text-[#6B4423] tracking-wider mb-3 group-hover:text-[#6B4423] transition-colors duration-300">
                       {service.title}
                     </h3>
 

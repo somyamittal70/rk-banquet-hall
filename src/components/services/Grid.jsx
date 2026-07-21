@@ -82,7 +82,7 @@ export default function ServiceGrid() {
   return (
     <section className="relative bg-[#0A0A0A] text-[#F8F6F2] font-poppins py-24 lg:py-36 overflow-hidden">
       {/* Background Architectural Watermark */}
-      {/* <div className="absolute right-0 top-1/3 text-[25vw] font-bold font-cinzelDecorative text-white/[0.01] pointer-events-none select-none tracking-widest leading-none">
+      {/* <div className="absolute right-0 top-1/3 text-[25vw] font-bold font-cormonant text-white/[0.01] pointer-events-none select-none tracking-widest leading-none">
         SPACE
       </div> */}
 
@@ -91,11 +91,11 @@ export default function ServiceGrid() {
         <div className="max-w-3xl mb-24 lg:mb-36">
           <div className="flex items-center space-x-3 mb-4">
             <span className="w-8 h-[1px] bg-[#C8A96A]" />
-            <span className="font-cinzel text-xs tracking-[0.5em] text-[#C8A96A] uppercase font-bold">
+            <span className="font-cormonant text-xs tracking-[0.5em] text-[#C8A96A] uppercase font-bold">
               Our Services
             </span>
           </div>
-          <h2 className="font-cinzelDecorative text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] tracking-wide">
+          <h2 className="font-cormonant text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] tracking-wide">
             Exceptional Venues
             <br />
             For <span className="text-[#C8A96A]">Every Celebration</span>
@@ -124,17 +124,17 @@ export default function ServiceGrid() {
                 >
                   {/* Micro Index Tracker */}
                   <div className="flex items-baseline space-x-4 mb-4">
-                    <span className="font-cinzelDecorative text-4xl md:text-5xl font-bold text-[#C8A96A]/20">
+                    <span className="font-cormonant text-4xl md:text-5xl font-bold text-[#C8A96A]/20">
                       {service.num}
                     </span>
                     <span className="h-[1px] w-12 bg-[#C8A96A]/30" />
-                    <span className="font-cinzel text-xs tracking-[0.3em] text-[#C8A96A] uppercase font-bold">
+                    <span className="font-cormonant text-xs tracking-[0.3em] text-[#C8A96A] uppercase font-bold">
                       {service.subtitle}
                     </span>
                   </div>
 
                   {/* Main Title */}
-                  <h3 className="font-cinzel text-2xl sm:text-3xl md:text-4xl font-medium text-white tracking-wide mb-6">
+                  <h3 className="font-cormonant text-2xl sm:text-3xl md:text-4xl font-medium text-white tracking-wide mb-6">
                     {service.title}
                   </h3>
 

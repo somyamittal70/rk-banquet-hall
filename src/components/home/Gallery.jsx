@@ -86,12 +86,12 @@ export default function Gallery() {
         <div className="text-center flex flex-col items-center mb-16">
           <div className="flex items-center space-x-3 mb-4">
             <span className="w-8 h-[1px] bg-[#6B4423]" />
-            <span className="pt-serif text-xs tracking-[0.4em] text-[#6B4423] uppercase font-bold">
+            <span className="marcellus-sc text-xs tracking-[0.4em] text-[#6B4423] uppercase font-bold">
               Wedding Gallery
             </span>
             <span className="w-8 h-[1px] bg-[#6B4423]" />
           </div>
-          <h2 className="pt-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
+          <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
             Creating Beautiful Memories
             <span className="text-[#6B4423]/80"> One Celebration at a Time</span>
           </h2>
@@ -136,10 +136,10 @@ export default function Gallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#6B4423]/35 via-[#6B4423]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
                 <div className="flex justify-between items-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
                   <div>
-                    <span className="pt-serif text-[10px] tracking-[0.35em] text-[#D9C8A9] uppercase font-bold block mb-1">
+                    <span className="marcellus-sc text-[10px] tracking-[0.35em] text-[#D9C8A9] uppercase font-bold block mb-1">
                       {item.category}
                     </span>
-                    <h3 className="pt-serif text-base md:text-lg text-[#FFFFFF] font-medium tracking-wide">
+                    <h3 className="marcellus-sc text-base md:text-lg text-[#FFFFFF] font-medium tracking-wide">
                       {item.title}
                     </h3>
                   </div>

@@ -37,7 +37,7 @@ export default function About() {
 
             {/* Experience Floating Badge */}
             <div className="absolute -top-6 right-6 z-30 bg-[#6B4423] text-[#FFFFFF] p-6 border-b-4 border-[#D9C8A9] shadow-xl text-center min-w-[120px]">
-              <span className="block pt-serif text-3xl font-bold text-[#D9C8A9]">
+              <span className="block marcellus-sc text-3xl font-bold text-[#D9C8A9]">
                 15+
               </span>
               <span className="block text-[10px] uppercase tracking-widest font-medium text-[#F5EDE0]/90 mt-1">
@@ -54,11 +54,11 @@ export default function About() {
             <div>
               <div className="flex items-center space-x-3 mb-3">
                 <span className="w-8 h-[1px] bg-[#6B4423]" />
-                <span className="pt-serif text-xs tracking-[0.35em] text-[#6B4423] uppercase font-bold">
+                <span className="marcellus-sc text-xs tracking-[0.35em] text-[#6B4423] uppercase font-bold">
                   About Us
                 </span>
               </div>
-              <h2 className="pt-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
+              <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
                 Where Every Love Story Finds Its
                 <span className="text-[#6B4423]/80 italic font-normal"> Perfect Celebration</span>
               </h2>
@@ -91,7 +91,7 @@ export default function About() {
                   strokeWidth={1.5}
                 />
                 <div>
-                  <h3 className="pt-serif text-xs font-bold uppercase text-[#6B4423] tracking-wider">
+                  <h3 className="marcellus-sc text-xs font-bold uppercase text-[#6B4423] tracking-wider">
                     Elegant Venue
                   </h3>
                   <p className="text-xs text-[#2E2013]/70 mt-1 font-light leading-snug">
@@ -106,7 +106,7 @@ export default function About() {
                   strokeWidth={1.5}
                 />
                 <div>
-                  <h3 className="pt-serif text-xs font-bold uppercase text-[#6B4423] tracking-wider">
+                  <h3 className="marcellus-sc text-xs font-bold uppercase text-[#6B4423] tracking-wider">
                     Personalized Planning
                   </h3>
                   <p className="text-xs text-[#2E2013]/70 mt-1 font-light leading-snug">
@@ -121,7 +121,7 @@ export default function About() {
                   strokeWidth={1.5}
                 />
                 <div>
-                  <h3 className="pt-serif text-xs font-bold uppercase text-[#6B4423] tracking-wider">
+                  <h3 className="marcellus-sc text-xs font-bold uppercase text-[#6B4423] tracking-wider">
                     Memorable Events
                   </h3>
                   <p className="text-xs text-[#2E2013]/70 mt-1 font-light leading-snug">

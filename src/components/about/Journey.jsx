@@ -64,12 +64,12 @@ export default function AboutJourney() {
         >
           <div className="flex items-center justify-center space-x-3 mb-4">
             <span className="w-6 h-[1px] bg-[#C8A96A]/40" />
-            <span className="font-cinzel text-xs tracking-[0.4em] text-[#C8A96A] uppercase font-bold">
+            <span className="font-cormonant text-xs tracking-[0.4em] text-[#C8A96A] uppercase font-bold">
               Our Process
             </span>
             <span className="w-6 h-[1px] bg-[#C8A96A]/40" />
           </div>
-          <h2 className="font-cinzelDecorative text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-wide">
+          <h2 className="font-cormonant text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight tracking-wide">
             Your Journey To
             <br />
             <span className="text-[#C8A96A]">The Perfect Wedding</span>
@@ -151,14 +151,14 @@ function JourneyCard({ step, Icon, index }) {
         {/* Header Block */}
         <div className="flex justify-between items-center mb-8 pb-6 border-b border-white/[0.03]">
           <div>
-            <div className="flex items-center space-x-2 text-[#C8A96A] font-cinzel text-xs font-bold tracking-widest mb-1">
+            <div className="flex items-center space-x-2 text-[#C8A96A] font-cormonant text-xs font-bold tracking-widest mb-1">
               <span>{step.phase}</span>
               <span className="text-white/20">•</span>
               <span className="text-white/60 font-poppins font-light tracking-normal">
                 {step.timeframe}
               </span>
             </div>
-            <h3 className="font-cinzel text-xl sm:text-2xl text-white font-medium tracking-wide">
+            <h3 className="font-cormonant text-xl sm:text-2xl text-white font-medium tracking-wide">
               {step.title}
             </h3>
           </div>
@@ -176,7 +176,7 @@ function JourneyCard({ step, Icon, index }) {
       </div>
 
       {/* Decorative corner asset (blueprint feel) */}
-      <div className="absolute bottom-2 right-2 font-cinzelDecorative text-6xl font-bold text-white/[0.01] select-none group-hover:text-[#C8A96A]/5 transition-colors duration-500">
+      <div className="absolute bottom-2 right-2 font-cormonant text-6xl font-bold text-white/[0.01] select-none group-hover:text-[#C8A96A]/5 transition-colors duration-500">
         {index + 1}
       </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowDown, Play } from "lucide-react";
-import backgroundImage from "/banner6.png"
+import backgroundImage from "/banner8.png"
 
 export default function AboutHero() {
   // Replace this placeholder link with your premium high-resolution background video asset
@@ -16,7 +16,7 @@ export default function AboutHero() {
         />
 
         {/* Layered Luxury Gradient Vignette Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0F0F0F]/30 via-[#0F0F0F]/20 to-[#0F0F0F]" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0F0F0F]/30 via-[#0F0F0F]/20 to-[#0F0F0F]" /> */}
         {/* <div className="absolute inset-0 bg-black/30" /> */}
       </div>
 
@@ -24,16 +24,16 @@ export default function AboutHero() {
       <div className="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 relative z-20 text-center flex flex-col items-center">
         {/* Primary Impact Headline */}
         {/* Primary Impact Headline */}
-        <h1 className="font-cinzelDecorative text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white tracking-wide leading-[1.2] sm:leading-[1.15] mb-4 sm:mb-6">
+        <h1 className="font-cormonant text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white tracking-wide leading-[1.2] sm:leading-[1.15] mb-4 sm:mb-6">
           Where Every Celebration
           <br />
-          <span className="text-[#C8A96A] italic font-normal font-cinzel">
+          <span className="text-[#C8A96A] font-bold font-cormonant">
             Becomes A Timeless Memory
           </span>
         </h1>
 
         {/* Subtitle Body Description */}
-        <p className="max-w-[92%] xs:max-w-sm sm:max-w-xl md:max-w-2xl text-gray-300 font-light text-sm sm:text-base md:text-lg leading-relaxed font-poppins tracking-wide mb-8 sm:mb-10 opacity-90">
+        <p className="max-w-[92%] xs:max-w-sm sm:max-w-xl md:max-w-2xl text-gray-300 font-light text-sm sm:text-base md:text-md leading-relaxed font-poppins tracking-wide mb-8 sm:mb-10 opacity-90">
           At RK Banquet Hall, we bring your dream celebrations to life with
           luxurious interiors, and personalized event planning.
         </p>

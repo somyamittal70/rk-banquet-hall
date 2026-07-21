@@ -54,11 +54,11 @@ export default function AboutSpecs() {
           <div className="max-w-xl">
             <div className="flex items-center space-x-3 mb-4">
               <span className="w-8 h-[1px] bg-[#A67C3D]" />
-              <span className="font-cinzel text-xs tracking-[0.4em] text-[#A67C3D] uppercase font-bold">
+              <span className="font-cormonant text-xs tracking-[0.4em] text-[#A67C3D] uppercase font-bold">
                 Our Venue
               </span>
             </div>
-            <h2 className="font-cinzelDecorative text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide">
+            <h2 className="font-cormonant text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide">
               Discover The
               <span className="text-[#A67C3D]">
                 {" "}
@@ -106,10 +106,10 @@ export default function AboutSpecs() {
               {/* Left Column: Descriptive Context Block */}
               <div className="lg:col-span-6 flex flex-col justify-between h-full">
                 <div>
-                  <span className="font-cinzel text-xs tracking-[0.3em] text-[#C8A96A] uppercase font-bold block mb-2">
+                  <span className="font-cormonant text-xs tracking-[0.3em] text-[#C8A96A] uppercase font-bold block mb-2">
                     {specifications[activeTab].subtitle}
                   </span>
-                  <h3 className="font-cinzelDecorative text-2xl sm:text-3xl font-bold text-white tracking-wide mb-6">
+                  <h3 className="font-cormonant text-2xl sm:text-3xl font-bold text-white tracking-wide mb-6">
                     {specifications[activeTab].title}
                   </h3>
                   <p className="text-gray-400 font-light text-sm sm:text-base leading-relaxed mb-8">
@@ -121,10 +121,10 @@ export default function AboutSpecs() {
                 <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
                   {specifications[activeTab].stats.map((stat, idx) => (
                     <div key={idx}>
-                      <span className="text-[10px] uppercase tracking-wider text-gray-500 block mb-1 font-cinzel">
+                      <span className="text-[10px] uppercase tracking-wider text-gray-500 block mb-1 font-cormonant">
                         {stat.label}
                       </span>
-                      <span className="text-sm sm:text-base font-semibold text-[#C8A96A] font-cinzel tracking-wide">
+                      <span className="text-sm sm:text-base font-semibold text-[#C8A96A] font-cormonant tracking-wide">
                         {stat.value}
                       </span>
                     </div>
