@@ -1,139 +1,163 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Eye, ShieldCheck, HeartHandshake } from "lucide-react";
+import { Sparkles, Sofa, ChefHat, Users } from "lucide-react";
 
-export default function AboutPillars() {
-  const pillars = [
-    {
-      icon: Eye,
-      title: "Elegant Venues",
-      desc: "Our beautifully designed banquet halls provide the perfect backdrop for weddings, receptions, engagements, and every special celebration with timeless elegance and luxury.",
-    },
-    {
-      icon: Sparkles,
-      title: "Personalized Décor",
-      desc: "Every celebration is uniquely styled with customized themes, floral arrangements, stage décor, ambient lighting, and elegant details that reflect your vision.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Exceptional Hospitality",
-      desc: "Our experienced team is dedicated to delivering seamless event management, warm guest service, and flawless coordination from beginning to end.",
-    },
-    {
-      icon: HeartHandshake,
-      title: "Memories That Last Forever",
-      desc: "We believe every celebration deserves to be unforgettable. From intimate gatherings to grand weddings, we create moments that you and your guests will cherish for a lifetime.",
-    },
-  ];
+const reasons = [
+  {
+    icon: Sparkles,
+    number: "01",
+    title: "Luxury Interior ",
+    desc: "Elegant themes and premium floral setups crafted to match every occasion.",
+  },
+  {
+    icon: Sofa,
+    number: "02",
+    title: "Modern Decoration ",
+    desc: "Contemporary halls with refined finishes and ambient lighting throughout.",
+  },
+  {
+    icon: ChefHat,
+    number: "03",
+    title: "Professional Catering",
+    desc: "Curated multi-cuisine menus prepared and served by expert culinary staff.",
+  },
+  {
+    icon: Users,
+    number: "04",
+    title: "Experienced Team",
+    desc: "A dedicated crew that manages every detail so your event runs seamlessly.",
+  },
+];
 
-  // Framer Motion Animation Variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15, // Staggers the entry of each individual card
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: [0.215, 0.61, 0.355, 1.0] }, // Custom premium bezier curve
-    },
-  };
-
-  const lineVariants = {
-    hidden: { width: 0 },
-    visible: { width: "2rem", transition: { duration: 0.6, ease: "easeOut" } },
-  };
-
+export default function WhyChooseUsSection() {
   return (
-    <section className="relative bg-[#0F0F0F] text-[#F8F6F2] font-poppins py-24 lg:py-32 overflow-hidden border-t border-b border-[#C8A96A]/10">
-      {/* Background Lighting Accents */}
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#C8A96A]/5 rounded-full blur-[120px] pointer-events-none select-none" />
+    <section className="bg-[#140D08] py-20 relative overflow-hidden">
+      {/* Ambient gold glow */}
+      <div className="absolute top-1/4 left-0 w-[450px] h-[450px] rounded-full bg-[#D9C8A9] opacity-[0.05] blur-[130px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="max-w-3xl mb-20">
-          <div className="flex items-center space-x-3 mb-4">
-            {/* Framer motion driven line extension */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={lineVariants}
-              className="h-[1px] bg-[#C8A96A]"
-            />
-            <span className="font-cinzel text-xs tracking-[0.4em] text-[#C8A96A] uppercase font-bold">
-              Why Choose Us
-            </span>
-          </div>
+      <div className="max-w-7xl mx-auto px-5 relative">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Image side */}
 
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="font-cinzelDecorative text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight tracking-wide"
+          <motion.div
+            initial={{
+              opacity: 0,
+              scale: 0.95,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
+            viewport={{
+              once: true,
+            }}
+            className="relative"
           >
-            What Makes
-            <span className="text-[#C8A96A]"> RK Banquet Hall Special</span>
-          </motion.h2>
-        </div>
+            <div className="rounded-[28px] overflow-hidden border border-[#3A2A18]">
+              <img
+                src="https://i.pinimg.com/736x/60/6a/a8/606aa894296fce63d62022949c92ff01.jpg"
+                alt="Grand Palace Banquet Hall interior"
+                className="w-full h-[520px] object-cover"
+              />
+            </div>
 
-        {/* Interactive Staggered Grid */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }} // Triggers slightly before entry into full viewport
-        >
-          {pillars.map((pillar, index) => {
-            const IconComponent = pillar.icon;
-            return (
-              <motion.div
-                key={index}
-                variants={cardVariants}
-                whileHover={{
-                  y: -8,
-                  transition: { duration: 0.3, ease: "easeInOut" },
+            {/* Floating accent card */}
+            <div className="absolute -bottom-8 -right-6 bg-[#1E150D] border border-[#D9C8A9]/30 rounded-2xl px-7 py-5 shadow-[0_0_50px_-10px_rgba(217,200,169,0.2)]">
+              <h3
+                className="text-4xl text-[#D9C8A9]"
+                style={{
+                  fontFamily: "Cormorant Garamond",
                 }}
-                className="group relative bg-[#1A1A1A] border border-white/[0.03] p-8 flex flex-col justify-between overflow-hidden transition-colors duration-500 hover:border-[#C8A96A]/30"
               >
-                {/* Decorative Hover Top Light Strip */}
-                <div className="absolute top-0 left-0 w-full h-[2px] bg-[#C8A96A] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                12+
+              </h3>
+              <p className="text-xs uppercase tracking-widest text-[#A08A6C] mt-1">
+                Years of Excellence
+              </p>
+            </div>
+          </motion.div>
 
-                <div>
-                  {/* Icon Wrapper Frame */}
-                  <div className="w-12 h-12 border border-[#C8A96A]/20 bg-[#0F0F0F] flex items-center justify-center text-[#C8A96A] mb-8 transition-all duration-500 group-hover:bg-[#C8A96A] group-hover:text-white group-hover:border-[#C8A96A]">
-                    <IconComponent strokeWidth={1.2} className="w-5 h-5" />
-                  </div>
+          {/* Content side */}
 
-                  {/* Title */}
-                  <h3 className="font-cinzel text-lg font-semibold text-white tracking-wider mb-4 group-hover:text-[#C8A96A] transition-colors duration-300">
-                    {pillar.title}
-                  </h3>
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-px bg-[#D9C8A9]/40" />
 
-                  {/* Description */}
-                  <p className="text-gray-400 font-light text-xs sm:text-sm leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
-                    {pillar.desc}
-                  </p>
-                </div>
+              <h2
+                className="uppercase tracking-[4px] text-sm text-[#D9C8A9]"
+                style={{
+                  fontFamily: "Cormorant Garamond",
+                }}
+              >
+                Why Choose Us
+              </h2>
+            </div>
 
-                {/* Corner Decorative Asset Index */}
-                <div className="absolute bottom-4 right-4 font-cinzel text-[10px] tracking-widest text-white/[0.03] uppercase font-bold select-none group-hover:text-[#C8A96A]/10 transition-colors duration-300">
-                  0{index + 1}
-                </div>
-              </motion.div>
-            );
-          })}
-        </motion.div>
+            <h3
+              className="text-4xl md:text-[40px] text-[#F0E6D2] leading-tight mb-10"
+              style={{
+                fontFamily: "Cormorant Garamond",
+              }}
+            >
+              Where every celebration meets timeless elegance
+            </h3>
+
+            <div className="flex flex-col gap-2">
+              {reasons.map((item, index) => {
+                const Icon = item.icon;
+
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{
+                      opacity: 0,
+                      x: 30,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      x: 0,
+                    }}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.1,
+                    }}
+                    viewport={{
+                      once: true,
+                    }}
+                    className="relative flex items-start gap-5 py-5 border-b border-[#3A2A18] last:border-b-0 group"
+                  >
+                    <span
+                      className="absolute -top-1 right-0 text-6xl text-[#D9C8A9] opacity-[0.06] group-hover:opacity-[0.12] duration-300 select-none"
+                      style={{
+                        fontFamily: "Cormorant Garamond",
+                      }}
+                    >
+                      {item.number}
+                    </span>
+
+                    <div className="w-12 h-12 shrink-0 rounded-full bg-[#1E150D] border border-[#3A2A18] flex items-center justify-center group-hover:bg-[#D9C8A9] group-hover:border-[#D9C8A9] duration-300">
+                      <Icon
+                        size={20}
+                        className="text-[#D9C8A9] group-hover:text-[#1A120B] duration-300"
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <h4 className="text-lg font-medium text-[#F0E6D2] mb-1">
+                        {item.title}
+                      </h4>
+                      <p className="text-sm text-[#A08A6C] leading-relaxed pr-14">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

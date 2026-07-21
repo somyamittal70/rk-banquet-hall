@@ -47,7 +47,10 @@ export default function AboutSpecs() {
   ];
 
   return (
-    <section className="relative bg-[#F8F6F2] text-[#0F0F0F] font-poppins py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-[#FAF7F1] text-[#0F0F0F] font-poppins py-24 lg:py-32 overflow-hidden">
+      {/* Ambient accent */}
+      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#A67C3D]/8 blur-3xl pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title Layout */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -68,32 +71,32 @@ export default function AboutSpecs() {
           </div>
 
           {/* Luxury Tab Buttons Controls */}
-          <div className="flex space-x-2 border-b border-black/5 pb-2 md:pb-0 md:border-none">
+          <div className="flex gap-2 bg-white  border border-[#A67C3D]/15 p-1.5 shadow-sm">
             {specifications.map((spec, index) => (
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`py-2 px-4 text-xs font-semibold uppercase tracking-widest transition-all duration-300 relative ${
+                className={`relative py-2.5 px-5 text-xs font-semibold uppercase tracking-widest rounded-full transition-colors duration-300 ${
                   activeTab === index
                     ? "text-[#A67C3D]"
-                    : "text-gray-400 hover:text-[#0F0F0F]"
+                    : "text-gray-500 hover:text-[#0F0F0F]"
                 }`}
               >
-                {spec.title.split(" ")[0]} {/* Shorthand for tab button */}
                 {activeTab === index && (
                   <motion.div
-                    layoutId="activeTabUnderline"
-                    className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#A67C3D]"
+                    layoutId="activeTabPill"
+                    className="absolute inset-0 bg-[#A67C3D] rounded-full -z-10"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}
+                {spec.title.split(" ")[0]}
               </button>
             ))}
           </div>
         </div>
 
         {/* Dynamic AnimatePresence Window */}
-        <div className="bg-[#0F0F0F] text-white p-8 md:p-12 lg:p-16 border border-[#C8A96A]/20 shadow-2xl">
+        <div className="bg-white text-[#0F0F0F] p-8 md:p-12 lg:p-16 rounded-[28px] border border-[#A67C3D]/15 shadow-[0_25px_60px_-20px_rgba(166,124,61,0.25)]">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -106,25 +109,25 @@ export default function AboutSpecs() {
               {/* Left Column: Descriptive Context Block */}
               <div className="lg:col-span-6 flex flex-col justify-between h-full">
                 <div>
-                  <span className="font-cinzel text-xs tracking-[0.3em] text-[#C8A96A] uppercase font-bold block mb-2">
+                  <span className="font-cinzel text-xs tracking-[0.3em] text-[#A67C3D] uppercase font-bold block mb-2">
                     {specifications[activeTab].subtitle}
                   </span>
-                  <h3 className="font-cinzelDecorative text-2xl sm:text-3xl font-bold text-white tracking-wide mb-6">
+                  <h3 className="font-cinzelDecorative text-2xl sm:text-3xl font-bold text-[#0F0F0F] tracking-wide mb-6">
                     {specifications[activeTab].title}
                   </h3>
-                  <p className="text-gray-400 font-light text-sm sm:text-base leading-relaxed mb-8">
+                  <p className="text-gray-600 font-light text-sm sm:text-base leading-relaxed mb-8">
                     {specifications[activeTab].description}
                   </p>
                 </div>
 
                 {/* Subspecifications Parameters Grid */}
-                <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
+                <div className="grid grid-cols-3 gap-4 pt-6 border-t border-[#0F0F0F]/8">
                   {specifications[activeTab].stats.map((stat, idx) => (
                     <div key={idx}>
-                      <span className="text-[10px] uppercase tracking-wider text-gray-500 block mb-1 font-cinzel">
+                      <span className="text-[10px] uppercase tracking-wider text-gray-400 block mb-1 font-cinzel">
                         {stat.label}
                       </span>
-                      <span className="text-sm sm:text-base font-semibold text-[#C8A96A] font-cinzel tracking-wide">
+                      <span className="text-sm sm:text-base font-semibold text-[#A67C3D] font-cinzel tracking-wide">
                         {stat.value}
                       </span>
                     </div>
@@ -133,16 +136,16 @@ export default function AboutSpecs() {
               </div>
 
               {/* Right Column: High-End Panoramic Asset Frame */}
-              <div className="lg:col-span-6 overflow-hidden aspect-[16/10] relative border border-white/10 group">
+              <div className="lg:col-span-6 overflow-hidden aspect-[16/10] relative rounded-2xl border border-[#0F0F0F]/8 group">
                 <motion.img
                   initial={{ scale: 1.1 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.7 }}
                   src={specifications[activeTab].image}
                   alt={specifications[activeTab].title}
-                  className="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
               </div>
             </motion.div>
           </AnimatePresence>
