@@ -83,11 +83,9 @@ export default function FAQSection() {
   const right = faqs.slice(3);
 
   return (
-    <section className="relative overflow-hidden bg-[#1B120D] py-24">
-      {/* Background Blur */}
-      <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-[#6B4423]/20 blur-[120px]" />
-      <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#D9C8A9]/10 blur-[120px]" />
-
+    <section className="relative overflow-hidden bg-[#362b26] py-24">
+     
+     
       <div className="relative mx-auto max-w-7xl px-5">
         {/* Heading */}
         <div className="mb-16 text-center">
