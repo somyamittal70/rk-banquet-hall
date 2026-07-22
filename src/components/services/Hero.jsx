@@ -50,7 +50,7 @@ export default function ServiceHero() {
   const videoSourceUrl = "/services.mp4";
 
   return (
-    <section className="relative w-full h-[100dvh] min-h-[560px] lg:h-screen bg-[#0A0A0A] overflow-hidden font-poppins">
+    <section className="relative w-full h-[100dvh] min-h-[560px] lg:h-screenoverflow-hidden font-poppins">
       {/* Cinematic Media Core Container */}
       <div className="absolute inset-0 w-full h-full z-0 select-none pointer-events-none">
         {/* Cinematic Background Layer — slow drift + settle */}
@@ -159,7 +159,7 @@ export default function ServiceHero() {
                 color: "#140D08",
               }}
               whileTap={{ scale: 0.97 }}
-              className="w-full sm:w-[280px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#21160e] text-[#C8A96A] border border-[#C8A96A] font-semibold uppercase text-[11px] sm:text-xs tracking-widest transition-colors duration-300 flex items-center justify-center space-x-2 group"
+              className="w-full sm:w-[280px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#C5A97A] text-[#140D08] border border-[#C8A96A] font-semibold uppercase text-[11px] sm:text-xs tracking-widest transition-colors duration-300 flex items-center justify-center space-x-2 group"
             >
               <span>View Our Gallery</span>
               <motion.span
