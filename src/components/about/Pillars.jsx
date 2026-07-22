@@ -88,7 +88,7 @@ export default function WhyChooseUsSection() {
               <h2
                 className="uppercase tracking-[4px] text-sm text-[#D9C8A9]"
                 style={{
-                  fontFamily: "marcelleus-sc",
+                  fontFamily: "'Marcellus SC', serif",
                 }}
               >
                 Why Choose Us
@@ -98,7 +98,7 @@ export default function WhyChooseUsSection() {
             <h3
               className="text-4xl md:text-[40px] text-[#F0E6D2] leading-tight mb-10"
               style={{
-                fontFamily: "marcelleus-sc",
+                fontFamily: "'Marcellus SC', serif",
               }}
             >
               Where every celebration meets timeless elegance

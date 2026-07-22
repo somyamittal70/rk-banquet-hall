@@ -67,9 +67,9 @@ export default function Testimonials() {
         {/* Header Block with Clean Underline Tabs */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div>
-            <div className="flex items-center space-x-3 mb-3">
-              <Sparkles className="w-4 h-4 text-[#6B4423]" />
-              <span className="marcellus-sc text-xs tracking-[0.35em] text-[#6B4423] uppercase font-bold">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-8 h-[2px] bg-[#B08D57]" />
+              <span className="text-xs uppercase font-bold tracking-[0.3em] text-[#B08D57]">
                 Client Journal
               </span>
             </div>

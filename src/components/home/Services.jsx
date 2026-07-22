@@ -106,6 +106,12 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header with Slide Navigation controls */}
+        <div className="flex items-center gap-2 mb-3">
+              <span className="w-8 h-[2px] bg-[#B08D57]" />
+              <span className="text-xs uppercase font-bold tracking-[0.3em] text-[#B08D57]">
+                Our Services
+              </span>
+            </div>
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">

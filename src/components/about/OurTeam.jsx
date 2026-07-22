@@ -1,29 +1,22 @@
+import React from "react";
 import { motion } from "framer-motion";
 
 const team = [
   {
     name: "Rohit Malhotra",
     role: "Founder & Director",
-    image:
-      "https://i.pinimg.com/736x/8d/45/2b/8d452b1e6c5b0a8f3d1a2e0e9c3d1a2e.jpg",
   },
   {
     name: "Neha Sharma",
     role: "Event Planner",
-    image:
-      "https://i.pinimg.com/736x/3f/2a/1c/3f2a1c9e5b0a8f3d1a2e0e9c3d1a2e5f.jpg",
   },
   {
     name: "Arjun Mehta",
     role: "Head Chef",
-    image:
-      "https://i.pinimg.com/736x/5b/0a/8f/5b0a8f3d1a2e0e9c3d1a2e5f3f2a1c9e.jpg",
   },
   {
     name: "Pooja Verma",
     role: "Decoration Head",
-    image:
-      "https://i.pinimg.com/736x/1a/2e/0e/1a2e0e9c3d1a2e5f3f2a1c9e5b0a8f3d.jpg",
   },
 ];
 
@@ -75,7 +68,7 @@ function InstagramIcon(props) {
 
 export default function MeetOurTeam() {
   return (
-    <section className="relative bg-[#F5EDE0] py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section className="relative bg-[#F5EDE0] py-16 sm:py-20 lg:py-24 overflow-hidden font-poppins">
       {/* Ambient decoration */}
       <div className="absolute -left-24 -top-24 w-72 h-72 rounded-full bg-[#D9C8A9]/20 blur-3xl pointer-events-none" />
       <div className="absolute -right-24 -bottom-24 w-72 h-72 rounded-full bg-[#6B4423]/10 blur-3xl pointer-events-none" />
@@ -120,15 +113,16 @@ export default function MeetOurTeam() {
               whileHover={{ y: -8 }}
               className="group bg-white rounded-3xl border border-[#E8DAC5] px-5 py-7 sm:px-6 sm:py-8 text-center shadow-[0_15px_35px_-15px_rgba(107,68,35,0.15)] hover:border-[#D9C8A9] hover:shadow-[0_20px_45px_-15px_rgba(107,68,35,0.25)] duration-300"
             >
-              {/* Photo */}
+              {/* Initial Letter Circle Avatar */}
               <div className="relative w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 sm:mb-5">
                 <div className="absolute inset-0 rounded-full border-2 border-dashed border-[#D9C8A9] group-hover:rotate-45 duration-700" />
-                <div className="absolute inset-[6px] rounded-full overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="absolute inset-[6px] rounded-full bg-[#F5EDE0] group-hover:bg-[#6B4423] transition-colors duration-500 flex items-center justify-center shadow-inner">
+                  <span
+                    className="text-2xl sm:text-3xl font-bold text-[#6B4423] group-hover:text-white transition-colors duration-500 group-hover:scale-110 transform transition-transform"
+                    style={{ fontFamily: "'Marcellus SC', serif" }}
+                  >
+                    {member.name.charAt(0)}
+                  </span>
                 </div>
               </div>
 
@@ -143,17 +137,17 @@ export default function MeetOurTeam() {
                 {member.role}
               </p>
 
-              {/* Social icons — reveal on hover, always visible on touch devices */}
+              {/* Social icons */}
               <div className="mt-4 sm:mt-5 flex items-center justify-center gap-3 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:-translate-y-1 sm:group-hover:translate-y-0 duration-300">
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#6B4423] group/icon"
+                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#6B4423] group/icon transition-colors"
                 >
                   <LinkedinIcon className="text-[#6B4423] group-hover/icon:text-white" />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#6B4423] group/icon"
+                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#6B4423] group/icon transition-colors"
                 >
                   <InstagramIcon className="text-[#6B4423] group-hover/icon:text-white" />
                 </a>

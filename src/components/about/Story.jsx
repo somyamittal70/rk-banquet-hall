@@ -94,7 +94,12 @@ export default function StorySection() {
 
 
            
-           <h1 className="text-[#A06C3A]">Our Story</h1>
+           <div className="flex items-center gap-2 mb-3">
+              <span className="w-8 h-[2px] bg-[#B08D57]" />
+              <span className="text-xs uppercase font-bold tracking-[0.3em] text-[#B08D57]">
+                Our Story
+              </span>
+            </div>
 
             <h2
               className="mt-6 text-4xl leading-tight text-[#6B4423] md:text-5xl"
