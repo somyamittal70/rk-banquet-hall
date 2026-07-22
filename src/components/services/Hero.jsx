@@ -50,7 +50,7 @@ export default function ServiceHero() {
   const videoSourceUrl = "/services.mp4";
 
   return (
-    <section className="relative w-full h-[100dvh] min-h-[560px] lg:h-screenoverflow-hidden font-poppins">
+    <section className="relative w-full h-[100dvh] min-h-[560px] lg:h-screen bg-[#0A0A0A] overflow-hidden font-poppins">
       {/* Cinematic Media Core Container */}
       <div className="absolute inset-0 w-full h-full z-0 select-none pointer-events-none">
         {/* Cinematic Background Layer — slow drift + settle */}
@@ -72,11 +72,11 @@ export default function ServiceHero() {
         </div>
 
         {/* Radial vignette — breathes gently */}
-        <motion.div
+        {/* <motion.div
           className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(111,108,108,0.26)_0%,rgba(77,75,75,0.8)_100%)] z-10"
           animate={{ opacity: [0.9, 1, 0.9] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
+        /> */}
       </div>
 
       {/* Main Content Layout Shield */}

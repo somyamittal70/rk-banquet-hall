@@ -60,7 +60,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative w-full h-[100dvh] min-h-[560px] overflow-hidden bg-[#21160e] font-poppins">
+    <div className="relative w-full h-[100dvh] min-h-[560px] overflow-hidden font-poppins">
       {/* Background Slideshow with Ken Burns drift + crossfade */}
       <AnimatePresence initial={false}>
         <motion.div
