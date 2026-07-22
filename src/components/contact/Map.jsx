@@ -27,7 +27,7 @@ export default function ContactMap() {
           <div className="md:col-span-4 md:text-right">
             <button 
               onClick={handleDirectionsClick}
-              className="inline-flex items-center space-x-2 bg-gray-50 border border-gray-200 text-xs tracking-wider uppercase font-medium px-5 py-3 hover:bg-[#0A0A0A] hover:text-white hover:border-[#0A0A0A] transition-all duration-300"
+              className="inline-flex items-center space-x-2 bg-gray-50 border border-gray-200 text-xs tracking-wider uppercase font-medium px-5 py-3 hover:bg-[#21160e] hover:text-white hover:border-[#21160e] transition-all duration-300"
             >
               <Navigation className="w-3.5 h-3.5 text-[#C8A96A]" />
               <span>Get Directions</span>
@@ -58,7 +58,7 @@ export default function ContactMap() {
               <div className="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#C8A96A] mb-4">
                 <MapPin className="w-4 h-4" />
               </div>
-              <h3 className="text-sm font-semibold text-[#0A0A0A] uppercase tracking-wider mb-2">
+              <h3 className="text-sm font-semibold text-[#21160e] uppercase tracking-wider mb-2">
                 Main Entrance
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed font-normal">
@@ -73,7 +73,7 @@ export default function ContactMap() {
               <div className="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-[#C8A96A] mb-4">
                 <Clock className="w-4 h-4" />
               </div>
-              <h3 className="text-sm font-semibold text-[#0A0A0A] uppercase tracking-wider mb-2">
+              <h3 className="text-sm font-semibold text-[#21160e] uppercase tracking-wider mb-2">
                 Office Hours
               </h3>
               <ul className="text-sm text-gray-600 space-y-1.5 font-normal">

@@ -116,30 +116,6 @@ export default function ContactHero() {
           Reach out today to check availability, discuss your requirements, and
           start planning an unforgettable experience.
         </motion.p>
-
-        {/* Action Button */}
-        <motion.div variants={fadeUp} className="pt-2">
-          <motion.button
-            onClick={() =>
-              window.scrollTo({
-                top: window.innerHeight * 0.85,
-                behavior: "smooth",
-              })
-            }
-            whileHover={{ y: -3 }}
-            whileTap={{ scale: 0.97 }}
-            className="group relative inline-flex items-center gap-3 bg-[#C8A96A] text-black px-7 py-3.5 text-xs font-bold tracking-[0.25em] uppercase transition-colors duration-300 hover:bg-white shadow-lg"
-          >
-            <span>Get In Touch</span>
-            <motion.span
-              initial={{ y: 0 }}
-              whileHover={{ y: 3 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-            >
-              <ArrowDown className="w-4 h-4" />
-            </motion.span>
-          </motion.button>
-        </motion.div>
       </motion.div>
     </section>
   );

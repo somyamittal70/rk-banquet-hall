@@ -108,7 +108,7 @@ export default function Hero() {
             className="relative inline-block bg-gradient-to-b from-[#C8A96A] via-[#C8A96A] to-[#C8A96A] bg-clip-text text-transparent"
             initial={{ opacity: 0, filter: "blur(6px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
+            transition={{ duration: 1, delay: 0, ease: "easeOut" }}
           >
             Dream Wedding
           </motion.span>
