@@ -32,7 +32,7 @@ export default function ContactForm() {
               <span className="text-xs tracking-widest text-[#C8A96A] uppercase font-bold block mb-2">
                 Get In Touch
               </span>
-              <h2 className="text-3xl font-semibold text-[#0A0A0A]">
+              <h2 className="text-3xl font-semibold text-[#6B4423]">
                 Contact Information
               </h2>
               <p className="text-gray-500 mt-3 text-sm leading-relaxed">
@@ -143,7 +143,7 @@ export default function ContactForm() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="flex items-center justify-center space-x-2 w-full bg-[#0A0A0A] text-white font-medium text-sm tracking-wider uppercase py-3.5 hover:bg-[#C8A96A] transition-colors duration-300"
+                  className="flex items-center justify-center space-x-2 w-full bg-[#6B4423] text-white font-medium text-sm tracking-wider uppercase py-3.5 hover:bg-[#C8A96A] transition-colors duration-300"
                 >
                   <span>Send Message</span>
                   <Send className="w-4 h-4 ml-1" />
