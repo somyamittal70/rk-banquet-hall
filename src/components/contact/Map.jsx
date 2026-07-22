@@ -11,7 +11,7 @@ export default function ContactMap() {
 
   return (
     <section className="bg-white text-[#1A1A1A] font-poppins pb-24 border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Metadata Row */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-end mb-8 pt-12 border-t border-gray-100">
@@ -19,7 +19,7 @@ export default function ContactMap() {
             <span className="text-xs tracking-widest text-[#C8A96A] uppercase font-bold block mb-2">
               Find Us
             </span>
-            <h2 className="text-2xl font-semibold text-[#0A0A0A]">
+            <h2 className="text-2xl font-semibold text-[#6B4423]">
               Our Venue Location
             </h2>
           </div>

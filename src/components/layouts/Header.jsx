@@ -3,32 +3,32 @@ import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
 import BookingModal from "./BookingModal";
 
-function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
+function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath, onOpenModal }) {
   return createPortal(
     <>
       {/* Dark backdrop behind the sliding panel */}
       <div
         onClick={() => setIsOpen(false)}
-        className={`fixed inset-0 z-[9998] bg-black/60 transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-[9998] bg-black/70 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       />
 
-      {/* Sliding side panel — enters from right, exits to right */}
+      {/* Sliding side panel — Dark Theme */}
       <div
-        className={`fixed top-0 right-0 h-full w-[78%] xs:w-[70%] sm:w-[380px] z-[9999] bg-[#FFFFFF] overflow-y-auto lg:hidden transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`fixed top-0 right-0 h-full w-[78%] xs:w-[70%] sm:w-[380px] z-[9999] bg-[#140D08] border-l border-[#C8A96A]/20 overflow-y-auto lg:hidden transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Subtle luxury accent border */}
-        <div className="absolute inset-3 opacity-20 pointer-events-none border border-[#D9C8A9]" />
+        {/* Subtle luxury gold frame border */}
+        <div className="absolute inset-3 opacity-30 pointer-events-none border border-[#C8A96A]" />
 
         {/* Close button */}
         <button
           onClick={() => setIsOpen(false)}
           type="button"
           aria-label="Close navigation menu"
-          className="absolute top-4 right-4 sm:top-5 sm:right-5 z-10 inline-flex items-center justify-center w-10 h-10 text-[#6B4423] hover:text-[#D9C8A9] transition-colors duration-300"
+          className="absolute top-4 right-4 sm:top-5 sm:right-5 z-10 inline-flex items-center justify-center w-10 h-10 text-[#C8A96A] hover:text-white transition-colors duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
           </svg>
         </button>
 
-        <nav className="min-h-full flex flex-col items-start justify-center gap-6 sm:gap-7 w-full px-8 sm:px-10">
+        <nav className="min-h-full flex flex-col items-start justify-center gap-6 sm:gap-7 w-full px-8 sm:px-10 py-12">
           {navLinks.map((link) => {
             const isActive = currentPath === link.path;
             return (
@@ -55,7 +55,9 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`text-lg sm:text-xl uppercase tracking-widest transition-colors duration-300 font-marcelleus-sc ${
-                  isActive ? "text-[#D9C8A9] font-bold" : "text-[#D9C8A9]/70 hover:text-[#D9C8A9]"
+                  isActive
+                    ? "text-[#C8A96A] font-bold"
+                    : "text-[#F8F6F2]/70 hover:text-[#C8A96A]"
                 }`}
               >
                 {link.name}
@@ -63,14 +65,17 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath }) {
             );
           })}
 
-          <div className="pt-4 sm:pt-6 w-full max-w-xs">
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="block w-full text-center px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#FFFFFF] bg-[#6B4423] hover:bg-[#D9C8A9] hover:text-[#6B4423] transition-colors duration-300 border border-[#6B4423]"
+          <div className="pt-6 sm:pt-8 w-full max-w-xs border-t border-[#C8A96A]/15 mt-2">
+            <button
+              type="button"
+              onClick={() => {
+                setIsOpen(false);
+                onOpenModal();
+              }}
+              className="block w-full text-center px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#140D08] bg-[#C8A96A] hover:bg-white transition-colors duration-300 border border-[#C8A96A]"
             >
               Book an Event
-            </Link>
+            </button>
           </div>
         </nav>
       </div>
@@ -216,6 +221,7 @@ export default function Header() {
         setIsOpen={setIsOpen}
         navLinks={navLinks}
         currentPath={currentPath}
+        onOpenModal={() => setIsModalOpen(true)}
       />
 
       {/* Render Modal */}
