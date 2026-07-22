@@ -123,7 +123,7 @@ export default function ServiceHero() {
           {/* Luxury CTA Controls */}
           <motion.div
             variants={ctaRow}
-            className="mt-8 sm:mt-10 flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4"
+            className="mt-8 sm:mt-10 flex flex-row gap-5"
           >
             {/* Primary Gold Button */}
             <motion.a
@@ -136,9 +136,9 @@ export default function ServiceHero() {
                 color: "#FFFFFF",
               }}
               whileTap={{ scale: 0.97 }}
-              className="w-full sm:w-[280px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#C8A96A] text-[#140D08] border border-[#C8A96A] font-semibold uppercase text-[11px] sm:text-xs tracking-widest transition-colors duration-300 flex items-center justify-center space-x-2 shadow-md group"
+              className="w-[250px] h-14 bg-[#C8A96A] text-[#140D08] border border-[#C8A96A] font-semibold uppercase text-xs tracking-wide transition-colors duration-300 flex items-center justify-center gap-2 shadow-md group"
             >
-              <span>Book Your Event</span>
+              <span className="whitespace-nowrap">Book Your Event</span>
               <motion.span
                 className="flex-shrink-0"
                 initial={{ x: 0, y: 0 }}
@@ -159,9 +159,9 @@ export default function ServiceHero() {
                 color: "#140D08",
               }}
               whileTap={{ scale: 0.97 }}
-              className="w-full sm:w-[280px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#C5A97A] text-[#140D08] border border-[#C8A96A] font-semibold uppercase text-[11px] sm:text-xs tracking-widest transition-colors duration-300 flex items-center justify-center space-x-2 group"
+              className="w-[250px] h-14 bg-[#C5A97A] text-[#140D08] border border-[#C8A96A] font-semibold uppercase text-xs tracking-wide transition-colors duration-300 flex items-center justify-center gap-2 group"
             >
-              <span>View Our Gallery</span>
+              <span className="whitespace-nowrap">View Our Gallery</span>
               <motion.span
                 className="flex-shrink-0"
                 initial={{ x: 0, y: 0 }}

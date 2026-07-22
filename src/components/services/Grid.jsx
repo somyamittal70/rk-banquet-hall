@@ -81,31 +81,6 @@ export default function ServiceGrid() {
 
   return (
     <div className="font-poppins overflow-hidden">
-      {/* Global Header Section */}
-      {/* <section className="bg-[#21160e] text-[#F8F6F2] py-20 lg:py-28 border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-3xl"
-          >
-            <div className="flex items-center space-x-3 mb-4">
-              <span className="w-8 h-[1px] bg-[#C8A96A]" />
-              <span className="font-cormonant text-xs tracking-[0.5em] text-[#C8A96A] uppercase font-bold">
-                Our Services
-              </span>
-            </div>
-            <h2 className="font-cormonant text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] tracking-wide">
-              Exceptional Venues
-              <br />
-              For <span className="text-[#C8A96A]">Every Celebration</span>
-            </h2>
-          </motion.div>
-        </div>
-      </section> */}
-
       {/* Alternating Row Sections Layout with Motion */}
       {services.map((service, index) => {
         const isEven = index % 2 === 0;
@@ -114,15 +89,14 @@ export default function ServiceGrid() {
         return (
           <section
             key={index}
-            className={`py-20 lg:py-32 transition-colors duration-500 border-b ${
+            className={`py-12 sm:py-16 md:py-20 lg:py-28 xl:py-32 transition-colors duration-500 border-b ${
               isLight
                 ? "bg-[#F5EDE0] text-[#2E2013] border-[#D9C8A9]/40"
                 : "bg-[#21160e] text-[#F8F6F2] border-white/5"
             }`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-                
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-16 xl:gap-20 items-center">
                 {/* Visual Column Block with Motion */}
                 <motion.div
                   initial={{ opacity: 0, x: isEven ? -40 : 40 }}
@@ -146,26 +120,26 @@ export default function ServiceGrid() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-                  className={`col-span-1 lg:col-span-6 flex flex-col justify-center ${
+                  className={`col-span-1 lg:col-span-6 flex flex-col justify-center min-w-0 ${
                     isEven ? "lg:order-2" : "lg:order-1"
                   }`}
                 >
                   {/* Micro Index Tracker */}
-                  <div className="flex items-baseline space-x-4 mb-4">
+                  <div className="flex items-baseline space-x-3 sm:space-x-4 mb-3 sm:mb-4">
                     <span
-                      className={`font-cormonant text-4xl md:text-5xl font-bold ${
+                      className={`font-cormonant text-3xl sm:text-4xl md:text-5xl font-bold ${
                         isLight ? "text-[#21160e]/25" : "text-[#C8A96A]/20"
                       }`}
                     >
                       {service.num}
                     </span>
                     <span
-                      className={`h-[1px] w-12 ${
+                      className={`h-[1px] w-8 sm:w-12 shrink-0 ${
                         isLight ? "bg-[#21160e]/30" : "bg-[#C8A96A]/30"
                       }`}
                     />
                     <span
-                      className={`font-cormonant text-xs tracking-[0.3em] uppercase font-bold ${
+                      className={`font-cormonant text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase font-bold ${
                         isLight ? "text-[#21160e]" : "text-[#C8A96A]"
                       }`}
                     >
@@ -175,7 +149,7 @@ export default function ServiceGrid() {
 
                   {/* Main Title */}
                   <h3
-                    className={`font-cormonant text-2xl sm:text-3xl md:text-4xl font-bold tracking-wide mb-6 ${
+                    className={`font-cormonant text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide mb-4 sm:mb-6 ${
                       isLight ? "text-[#2E2013]" : "text-white"
                     }`}
                   >
@@ -184,18 +158,19 @@ export default function ServiceGrid() {
 
                   {/* Core Description Text */}
                   <p
-                    className={`font-light text-sm sm:text-base leading-relaxed mb-8 ${
+                    className={`font-light text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 ${
                       isLight ? "text-[#2E2013]/80" : "text-gray-400"
                     }`}
                   >
                     {service.desc}
                   </p>
 
-                  {/* Technical Spec Chips Row */}
+                  {/* Technical Spec Chips Row — always a single line, scrolls horizontally if needed */}
                   <div
-                    className={`flex flex-wrap gap-2 pt-6 border-t ${
+                    className={`flex flex-nowrap gap-2 pt-5 sm:pt-6 border-t overflow-x-auto -mx-1 px-1 scrollbar-none ${
                       isLight ? "border-[#21160e]/10" : "border-white/[0.05]"
                     }`}
+                    style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                   >
                     {service.specs.map((spec, idx) => (
                       <motion.span
@@ -204,7 +179,7 @@ export default function ServiceGrid() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.2 + idx * 0.1 }}
-                        className={`text-[10px] tracking-widest uppercase font-semibold px-3.5 py-2 ${
+                        className={`shrink-0 whitespace-nowrap text-[9px] sm:text-[10px] tracking-widest uppercase font-semibold px-2.5 sm:px-3.5 py-1.5 sm:py-2 ${
                           isLight
                             ? "border border-[#21160e]/20 text-[#21160e] bg-[#FFFFFF]/60"
                             : "border border-white/10 text-gray-300 bg-white/[0.02]"
@@ -215,12 +190,16 @@ export default function ServiceGrid() {
                     ))}
                   </div>
                 </motion.div>
-
               </div>
             </div>
           </section>
         );
       })}
+
+      {/* Hide scrollbar for the single-line spec chips row (WebKit browsers) */}
+      <style>{`
+        .scrollbar-none::-webkit-scrollbar { display: none; }
+      `}</style>
     </div>
   );
 }
@@ -239,6 +218,8 @@ function ParallaxImageFrame({ src, alt, isLight }) {
 
   const handleMouseMove = (e) => {
     if (!frameRef.current) return;
+    // Disable the tilt/parallax effect on touch devices (no real hover there anyway)
+    if (window.matchMedia("(hover: none)").matches) return;
     const rect = frameRef.current.getBoundingClientRect();
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
@@ -267,6 +248,7 @@ function ParallaxImageFrame({ src, alt, isLight }) {
       <motion.img
         src={src}
         alt={alt}
+        loading="lazy"
         style={{ x: imgX, y: imgY, scale: 1.12 }}
         className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 pointer-events-none select-none"
       />
@@ -282,19 +264,19 @@ function ParallaxImageFrame({ src, alt, isLight }) {
 
       {/* Inner Frame Offset */}
       <div
-        className={`absolute inset-0 border-[12px] pointer-events-none transition-transform duration-500 group-hover:scale-[0.97] ${
+        className={`absolute inset-0 border-[8px] sm:border-[12px] pointer-events-none transition-transform duration-500 group-hover:scale-[0.97] ${
           isLight ? "border-[#F5EDE0]/80" : "border-[#D9C8A9]"
         }`}
       />
 
       {/* Floating Corner Accent Line */}
       <div
-        className={`absolute top-6 left-6 w-4 h-4 border-t border-l opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+        className={`absolute top-4 left-4 sm:top-6 sm:left-6 w-4 h-4 border-t border-l opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
           isLight ? "border-[#21160e]" : "border-[#C8A96A]"
         }`}
       />
       <div
-        className={`absolute bottom-6 right-6 w-4 h-4 border-b border-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+        className={`absolute bottom-4 right-4 sm:bottom-6 sm:right-6 w-4 h-4 border-b border-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
           isLight ? "border-[#21160e]" : "border-[#C8A96A]"
         }`}
       />
