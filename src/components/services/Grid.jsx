@@ -283,7 +283,7 @@ function ParallaxImageFrame({ src, alt, isLight }) {
       {/* Inner Frame Offset */}
       <div
         className={`absolute inset-0 border-[12px] pointer-events-none transition-transform duration-500 group-hover:scale-[0.97] ${
-          isLight ? "border-[#F5EDE0]/80" : "border-[#0A0A0A]"
+          isLight ? "border-[#F5EDE0]/80" : "border-[#D9C8A9]"
         }`}
       />
 
