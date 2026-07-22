@@ -61,7 +61,7 @@ export default function AboutSpecs() {
                 Our Venue
               </span>
             </div>
-            <h2 className="font-marcelleus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#0F0F0F] leading-tight tracking-wide">
+            <h2 className="font-marcelleus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#21160e] leading-tight tracking-wide">
               Discover The
               <span className="text-[#A67C3D]">
                 {" "}
@@ -85,7 +85,7 @@ export default function AboutSpecs() {
                 {activeTab === index && (
                   <motion.div
                     layoutId="activeTabPill"
-                    className="absolute inset-0 bg-[#A67C3D] rounded-full -z-10"
+                    className="absolute inset-0 bg-[#21160e] rounded-full -z-10"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}

@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
     <section className="relative py-24 lg:py-32 bg-[#F5EDE0]/30 font-poppins overflow-hidden">
       {/* Background Decorative Ambient Glows */}
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-[#B08D57]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-[#6B4423]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-[#21160e]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         
@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
             </div>
             <h2 className="text-4xl sm:text-5xl font-cormonant font-semibold text-[#2E2013] leading-tight">
               Built for moments <br />
-              <span className="italic text-[#6B4423]">that matter most.</span>
+              <span className=" text-[#A06C3A]">that matter most.</span>
             </h2>
           </div>
           
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
                 <div>
                   {/* Icon & Counter Badge Header */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-[#F5EDE0] text-[#6B4423] flex items-center justify-center group-hover:bg-[#6B4423] group-hover:text-white transition-colors duration-300 shadow-sm">
+                    <div className="w-12 h-12 rounded-xl bg-[#F5EDE0] text-[#21160e] flex items-center justify-center group-hover:bg-[#21160e] group-hover:text-white transition-colors duration-300 shadow-sm">
                       <Icon className="w-6 h-6" strokeWidth={1.75} />
                     </div>
                     <span className="text-xs font-mono font-semibold text-[#B08D57] bg-[#F5EDE0]/60 px-2.5 py-1 rounded-full border border-[#B08D57]/20">
@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="text-xl font-cormonant font-bold text-[#2E2013] mb-3 group-hover:text-[#6B4423] transition-colors duration-200">
+                  <h3 className="text-xl font-cormonant font-bold text-[#2E2013] mb-3 group-hover:text-[#21160e] transition-colors duration-200">
                     {feature.title}
                   </h3>
                   <p className="text-sm text-[#2E2013]/70 leading-relaxed">

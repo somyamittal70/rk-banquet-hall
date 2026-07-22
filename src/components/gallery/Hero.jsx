@@ -71,9 +71,9 @@ export default function GalleryHero() {
 
             {/* Animated Arrow + Line */}
             <div className="relative flex flex-col items-center">
-              <div className="w-[1px] h-10 bg-[#D9C8A9] group-hover:bg-[#D9C8A9] transition-colors duration-500 overflow-hidden relative">
+              {/* <div className="w-[1px] h-10 bg-[#D9C8A9] group-hover:bg-[#D9C8A9] transition-colors duration-500 overflow-hidden relative">
                 <span className="absolute top-0 left-0 w-full h-3/4 bg-[#D9C8A9] animate-pulse" />
-              </div>
+              </div> */}
               <div className="p-2 -mt-1 rounded-full border border-[#D9C8A9] bg-[#FFFFFF] text-[#D9C8A9] group-hover:border-[#D9C8A9] group-hover:bg-[#D9C8A9] group-hover:text-[#FFFFFF] transition-all duration-300 shadow-sm">
                 <ArrowDown className="w-3.5 h-3.5 transform group-hover:translate-y-0.5 transition-transform duration-300" />
               </div>

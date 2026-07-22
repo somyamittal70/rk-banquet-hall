@@ -30,7 +30,7 @@ const reasons = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="bg-[#140D08] py-20 relative overflow-hidden">
+    <section className="bg-[#21160e] py-20 relative overflow-hidden">
       {/* Ambient gold glow */}
       <div className="absolute top-1/4 left-0 w-[450px] h-[450px] rounded-full bg-[#D9C8A9] opacity-[0.05] blur-[130px] pointer-events-none" />
 

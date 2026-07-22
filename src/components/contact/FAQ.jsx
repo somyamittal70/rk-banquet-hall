@@ -53,7 +53,7 @@ function FAQItem({ item, active, onClick }) {
           {item.question}
         </h3>
 
-        <div className="flex h-8 w-8 items-center justify-center l bg-[#6B4423] text-[#D9C8A9]">
+        <div className="flex h-8 w-8 items-center justify-center l bg-[#21160e] text-[#D9C8A9]">
           {active ? <Minus size={16} /> : <Plus size={16} />}
         </div>
       </button>
@@ -83,9 +83,9 @@ export default function FAQSection() {
   const right = faqs.slice(3);
 
   return (
-    <section className="relative overflow-hidden bg-[#1B120D] py-24">
+    <section className="relative overflow-hidden bg-[#21160e] py-24">
       {/* Background Blur */}
-      <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-[#6B4423]/20 blur-[120px]" />
+      <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-[#21160e]/20 blur-[120px]" />
       <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#D9C8A9]/10 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-5">

@@ -82,7 +82,7 @@ export default function ServiceGrid() {
   return (
     <div className="font-poppins overflow-hidden">
       {/* Global Header Section */}
-      {/* <section className="bg-[#140D08] text-[#F8F6F2] py-20 lg:py-28 border-b border-white/10">
+      {/* <section className="bg-[#21160e] text-[#F8F6F2] py-20 lg:py-28 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -117,7 +117,7 @@ export default function ServiceGrid() {
             className={`py-20 lg:py-32 transition-colors duration-500 border-b ${
               isLight
                 ? "bg-[#F5EDE0] text-[#2E2013] border-[#D9C8A9]/40"
-                : "bg-[#140D08] text-[#F8F6F2] border-white/5"
+                : "bg-[#21160e] text-[#F8F6F2] border-white/5"
             }`}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,19 +154,19 @@ export default function ServiceGrid() {
                   <div className="flex items-baseline space-x-4 mb-4">
                     <span
                       className={`font-cormonant text-4xl md:text-5xl font-bold ${
-                        isLight ? "text-[#6B4423]/25" : "text-[#C8A96A]/20"
+                        isLight ? "text-[#21160e]/25" : "text-[#C8A96A]/20"
                       }`}
                     >
                       {service.num}
                     </span>
                     <span
                       className={`h-[1px] w-12 ${
-                        isLight ? "bg-[#6B4423]/30" : "bg-[#C8A96A]/30"
+                        isLight ? "bg-[#21160e]/30" : "bg-[#C8A96A]/30"
                       }`}
                     />
                     <span
                       className={`font-cormonant text-xs tracking-[0.3em] uppercase font-bold ${
-                        isLight ? "text-[#6B4423]" : "text-[#C8A96A]"
+                        isLight ? "text-[#21160e]" : "text-[#C8A96A]"
                       }`}
                     >
                       {service.subtitle}
@@ -194,7 +194,7 @@ export default function ServiceGrid() {
                   {/* Technical Spec Chips Row */}
                   <div
                     className={`flex flex-wrap gap-2 pt-6 border-t ${
-                      isLight ? "border-[#6B4423]/10" : "border-white/[0.05]"
+                      isLight ? "border-[#21160e]/10" : "border-white/[0.05]"
                     }`}
                   >
                     {service.specs.map((spec, idx) => (
@@ -206,7 +206,7 @@ export default function ServiceGrid() {
                         transition={{ duration: 0.4, delay: 0.2 + idx * 0.1 }}
                         className={`text-[10px] tracking-widest uppercase font-semibold px-3.5 py-2 ${
                           isLight
-                            ? "border border-[#6B4423]/20 text-[#6B4423] bg-[#FFFFFF]/60"
+                            ? "border border-[#21160e]/20 text-[#21160e] bg-[#FFFFFF]/60"
                             : "border border-white/10 text-gray-300 bg-white/[0.02]"
                         }`}
                       >
@@ -290,12 +290,12 @@ function ParallaxImageFrame({ src, alt, isLight }) {
       {/* Floating Corner Accent Line */}
       <div
         className={`absolute top-6 left-6 w-4 h-4 border-t border-l opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-          isLight ? "border-[#6B4423]" : "border-[#C8A96A]"
+          isLight ? "border-[#21160e]" : "border-[#C8A96A]"
         }`}
       />
       <div
         className={`absolute bottom-6 right-6 w-4 h-4 border-b border-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-          isLight ? "border-[#6B4423]" : "border-[#C8A96A]"
+          isLight ? "border-[#21160e]" : "border-[#C8A96A]"
         }`}
       />
     </motion.div>

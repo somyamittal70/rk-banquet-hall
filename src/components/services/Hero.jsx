@@ -24,7 +24,7 @@ export default function ServiceHero() {
             className="w-full h-full object-cover opacity-60 scale-100 transition-transform duration-1000"
           />
         </div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(10,10,10,0.8)_100%)] z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(111, 108, 108, 0.26)_0%,rgba(77, 75, 75, 0.8)_100%)] z-10" />
       </div>
 
       {/* Main Content Layout Shield */}
@@ -57,19 +57,21 @@ export default function ServiceHero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-8 sm:mt-10 flex xs:flex-row flex-wrap gap-3 sm:gap-4 "
+            className="mt-8 sm:mt-10 flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4"
           >
+            {/* Primary Gold Button */}
             <a
               href="/contact"
-              className="w-[320px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#C8A96A] text-black font-semibold uppercase text-[11px] sm:text-xs tracking-widest hover:bg-[#A67C3D] transition-colors duration-300 flex items-center justify-center space-x-2 group"
+              className="w-full sm:w-[280px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#C8A96A] text-[#140D08] border border-[#C8A96A] font-semibold uppercase text-[11px] sm:text-xs tracking-widest hover:bg-[#A67C3D] hover:border-[#A67C3D] hover:text-white transition-all duration-300 flex items-center justify-center space-x-2 shadow-md group"
             >
               <span>Book Your Event</span>
               <ArrowUpRight className="w-4 h-4 flex-shrink-0 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
             </a>
 
+            {/* Secondary Opposite / Outlined Dark Button */}
             <a
               href="/gallery"
-              className="w-[320px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#C8A96A] text-black font-semibold uppercase text-[11px] sm:text-xs tracking-widest hover:bg-[#A67C3D] transition-colors duration-300 flex items-center justify-center space-x-2 group"
+              className="w-full sm:w-[280px] px-5 sm:px-6 py-3.5 sm:py-4 bg-[#21160e] text-[#C8A96A] border border-[#C8A96A] font-semibold uppercase text-[11px] sm:text-xs tracking-widest hover:bg-[#C8A96A] hover:text-[#140D08] transition-all duration-300 flex items-center justify-center space-x-2 group"
             >
               <span>View Our Gallery</span>
               <ArrowUpRight className="w-4 h-4 flex-shrink-0 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />

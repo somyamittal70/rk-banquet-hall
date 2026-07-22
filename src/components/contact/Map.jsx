@@ -19,7 +19,7 @@ export default function ContactMap() {
             <span className="text-xs tracking-widest text-[#C8A96A] uppercase font-bold block mb-2">
               Find Us
             </span>
-            <h2 className="text-2xl font-semibold text-[#6B4423]">
+            <h2 className="text-2xl font-semibold text-[#21160e]">
               Our Venue Location
             </h2>
           </div>

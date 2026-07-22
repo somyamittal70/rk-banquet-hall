@@ -31,7 +31,7 @@ export default function StorySection() {
     <section className="relative overflow-hidden bg-[#F5EDE0] py-20 lg:py-28">
       {/* Background Decoration */}
       <div className="absolute -left-28 top-10 h-72 w-72 rounded-full bg-[#D9C8A9]/25 blur-3xl" />
-      <div className="absolute -right-28 bottom-10 h-80 w-80 rounded-full bg-[#6B4423]/10 blur-3xl" />
+      <div className="absolute -right-28 bottom-10 h-80 w-80 rounded-full bg-[#21160e]/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid items-start gap-16 lg:grid-cols-12">
@@ -43,7 +43,7 @@ export default function StorySection() {
             viewport={{ once: true }}
             className="lg:col-span-5 relative"
           >
-            <div className="absolute -left-5 -top-5 w-24 h-24 border-l-2 border-t-2 border-[#6B4423]/40 pointer-events-none hidden lg:block" />
+            <div className="absolute -left-5 -top-5 w-24 h-24 border-l-2 border-t-2 border-[#21160e]/40 pointer-events-none hidden lg:block" />
 
             <div className="overflow-hidden rounded-[28px] shadow-[0_30px_60px_-15px_rgba(107,68,35,0.3)] aspect-[4/5]">
               <img
@@ -57,7 +57,7 @@ export default function StorySection() {
             <div className="mt-5 flex items-center justify-between border-t border-[#D9C8A9] pt-4">
               <div>
                 <h4
-                  className="text-2xl text-[#6B4423]"
+                  className="text-2xl text-[#21160e]"
                   style={{ fontFamily: "'Marcellus SC', serif" }}
                 >
                   5000+
@@ -69,7 +69,7 @@ export default function StorySection() {
               <div className="h-8 w-px bg-[#D9C8A9]" />
               <div>
                 <h4
-                  className="text-2xl text-[#6B4423]"
+                  className="text-2xl text-[#21160e]"
                   style={{ fontFamily: "'Marcellus SC', serif" }}
                 >
                   12+
@@ -102,7 +102,7 @@ export default function StorySection() {
             </div>
 
             <h2
-              className="mt-6 text-4xl leading-tight text-[#6B4423] md:text-5xl"
+              className="mt-6 text-4xl leading-tight text-[#21160e] md:text-5xl"
               style={{ fontFamily: "'Marcellus SC', serif" }}
             >
               More than just a venue —
@@ -129,11 +129,11 @@ export default function StorySection() {
                     viewport={{ once: true }}
                     className="relative group"
                   >
-                    <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-[#F5EDE0] border-2 border-[#D9C8A9] group-hover:bg-[#6B4423] group-hover:border-[#6B4423] duration-300" />
+                    <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-[#F5EDE0] border-2 border-[#D9C8A9] group-hover:bg-[#21160e] group-hover:border-[#21160e] duration-300" />
 
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 shrink-0 rounded-full bg-white border border-[#D9C8A9] flex items-center justify-center">
-                        <Icon size={16} className="text-[#6B4423]" />
+                        <Icon size={16} className="text-[#21160e]" />
                       </div>
                       <div>
                         <span className="text-sm font-medium text-[#A06C3A] tracking-widest uppercase block mb-1">
@@ -158,7 +158,7 @@ export default function StorySection() {
                   story — that's the standard we hold ourselves to.
                 </p>
                 <p
-                  className="mt-3 text-base text-[#6B4423]"
+                  className="mt-3 text-base text-[#21160e]"
                   style={{ fontFamily: "'Marcellus SC', serif" }}
                 >
                   Rohit Malhotra

@@ -70,10 +70,10 @@ const stats = [
 
 export default function FacilitiesSection() {
   return (
-    <section className="bg-[#140D08] py-20 relative overflow-hidden">
+    <section className="bg-[#21160e] py-20 relative overflow-hidden">
       {/* Ambient gold glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#D9C8A9] opacity-[0.06] blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#6B4423] opacity-[0.15] blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#21160e] opacity-[0.15] blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-5 relative">
         <div className="grid lg:grid-cols-3 gap-8 items-start">

@@ -21,7 +21,7 @@ export default function ContactHero() {
         />
 
         {/* Dark Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/40" />
       </div>
 
       {/* Spacer for Top Navbar Alignment */}
@@ -37,8 +37,8 @@ export default function ContactHero() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 className="font-marcelleus-sc text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-white leading-[1.12] tracking-wide">
-            Celebrate Your Special Moments <br />
-            <span className="text-[#C8A96A]">With Us</span>
+            Celebrate Your Special<br />
+            <span className="text-[#C8A96A]"> Moments With Us</span>
           </h1>
         </motion.div>
 

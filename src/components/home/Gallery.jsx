@@ -80,20 +80,20 @@ export default function Gallery() {
       : galleryItems.filter((item) => item.category === activeFilter);
 
   return (
-    <section className="relative bg-[#FFFFFF] text-[#6B4423] font-poppins py-24 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
+    <section className="relative bg-[#FFFFFF] text-[#21160e] font-poppins py-24 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center flex flex-col items-center mb-16">
           <div className="flex items-center space-x-3 mb-4">
-            <span className="w-8 h-[1px] bg-[#6B4423]" />
-            <span className="marcellus-sc text-xs tracking-[0.4em] text-[#6B4423] uppercase font-bold">
+            <span className="w-8 h-[1px] bg-[#21160e]" />
+            <span className="marcellus-sc text-xs tracking-[0.4em] text-[#21160e] uppercase font-bold">
               Wedding Gallery
             </span>
-            <span className="w-8 h-[1px] bg-[#6B4423]" />
+            <span className="w-8 h-[1px] bg-[#21160e]" />
           </div>
-          <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#6B4423] leading-tight tracking-wide">
-            Creating Beautiful Memories
-            <span className="text-[#6B4423]/80"> One Celebration at a Time</span>
+          <h2 className="marcellus-sc text-3xl sm:text-4xl md:text-5xl font-bold text-[#21160e] leading-tight tracking-wide">
+            Turning Moments Into 
+            <span className="text-[#A06C3A]"> Memories</span>
           </h2>
         </div>
 
@@ -105,13 +105,13 @@ export default function Gallery() {
               onClick={() => setActiveFilter(category)}
               className={`relative py-2 px-4 text-xs font-semibold uppercase tracking-widest transition-all duration-300 ${
                 activeFilter === category
-                  ? "text-[#6B4423]"
-                  : "text-[#6B4423]/60 hover:text-[#6B4423]"
+                  ? "text-[#21160e]"
+                  : "text-[#21160e]/60 hover:text-[#21160e]"
               }`}
             >
               {category}
               {activeFilter === category && (
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-[2px] bg-[#6B4423]" />
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-[2px] bg-[#21160e]" />
               )}
             </button>
           ))}
@@ -123,7 +123,7 @@ export default function Gallery() {
             <div
               key={item.id}
               onClick={() => setSelectedImage(item.image)}
-              className={`group relative overflow-hidden bg-[#6B4423] cursor-pointer shadow-lg border border-[#D9C8A9] transition-all duration-300 ${item.span}`}
+              className={`group relative overflow-hidden bg-[#21160e] cursor-pointer shadow-lg border border-[#D9C8A9] transition-all duration-300 ${item.span}`}
             >
               {/* Image Container */}
               <img
@@ -133,7 +133,7 @@ export default function Gallery() {
               />
 
               {/* Rich Glass Overlay Card on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#6B4423]/35 via-[#6B4423]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#21160e]/35 via-[#21160e]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6 flex flex-col justify-end">
                 <div className="flex justify-between items-end transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
                   <div>
                     <span className="marcellus-sc text-[10px] tracking-[0.35em] text-[#D9C8A9] uppercase font-bold block mb-1">
@@ -155,7 +155,7 @@ export default function Gallery() {
 
       {/* Luxury Full-Screen Lightbox Modal Overlays */}
       {selectedImage && (
-        <div className="fixed inset-0 z-[100] bg-[#6B4423]/35 backdrop-blur-md flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[100] bg-[#21160e]/35 backdrop-blur-md flex items-center justify-center p-4">
           <button
             onClick={() => setSelectedImage(null)}
             className="absolute top-6 right-6 text-[#FFFFFF] hover:text-[#D9C8A9] transition-colors p-2"

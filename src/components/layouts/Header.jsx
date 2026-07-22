@@ -16,7 +16,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath, onOpenModal })
 
       {/* Sliding side panel — Dark Theme */}
       <div
-        className={`fixed top-0 right-0 h-full w-[78%] xs:w-[70%] sm:w-[380px] z-[9999] bg-[#140D08] border-l border-[#C8A96A]/20 overflow-y-auto lg:hidden transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`fixed top-0 right-0 h-full w-[78%] xs:w-[70%] sm:w-[380px] z-[9999] bg-[#21160e] border-l border-[#C8A96A]/20 overflow-y-auto lg:hidden transform transition-transform duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -72,7 +72,7 @@ function MobileDrawer({ isOpen, setIsOpen, navLinks, currentPath, onOpenModal })
                 setIsOpen(false);
                 onOpenModal();
               }}
-              className="block w-full text-center px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#140D08] bg-[#C8A96A] hover:bg-white transition-colors duration-300 border border-[#C8A96A]"
+              className="block w-full text-center px-6 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#21160e] bg-[#C8A96A] hover:bg-white transition-colors duration-300 border border-[#C8A96A]"
             >
               Book an Event
             </button>
@@ -146,12 +146,12 @@ export default function Header() {
                   key={link.name}
                   to={link.path}
                   className={`relative py-2 font-medium text-[13px] xl:text-sm uppercase tracking-widest transition-colors duration-300 group whitespace-nowrap ${
-                    isActive ? "text-[#6B4423]" : "text-[#6B4423]/80 hover:text-[#D9C8A9]"
+                    isActive ? "text-[#21160e]" : "text-[#21160e]/80 hover:text-[#D9C8A9]"
                   }`}
                 >
                   {link.name}
                   <span
-                    className={`absolute bottom-0 left-0 h-[1.5px] bg-[#6B4423] transition-all duration-300 ease-out ${
+                    className={`absolute bottom-0 left-0 h-[1.5px] bg-[#21160e] transition-all duration-300 ease-out ${
                       isActive ? "w-full" : "w-0 group-hover:w-full"
                     }`}
                   />
@@ -164,7 +164,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center flex-shrink-0">
             <button
               onClick={() => setIsModalOpen(true)}
-              className="inline-flex items-center justify-center px-5 py-2.5 xl:px-6 text-[11px] xl:text-xs font-semibold uppercase tracking-widest transition-all duration-300 border bg-transparent text-[#6B4423] border-[#6B4423] hover:bg-[#6B4423] hover:text-[#FFFFFF] whitespace-nowrap"
+              className="inline-flex items-center justify-center px-5 py-2.5 xl:px-6 text-[11px] xl:text-xs font-semibold uppercase tracking-widest transition-all duration-300 border bg-transparent text-[#21160e] border-[#21160e] hover:bg-[#21160e] hover:text-[#FFFFFF] whitespace-nowrap"
             >
               Book an Event
             </button>
@@ -175,7 +175,7 @@ export default function Header() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 focus:outline-none text-[#6B4423] hover:text-[#D9C8A9] transition-colors duration-300"
+              className="inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 focus:outline-none text-[#21160e] hover:text-[#D9C8A9] transition-colors duration-300"
               aria-expanded={isOpen}
               aria-label="Toggle navigation menu"
             >

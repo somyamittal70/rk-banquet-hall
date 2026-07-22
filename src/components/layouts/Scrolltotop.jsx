@@ -31,7 +31,7 @@ export default function ScrollToTopButton() {
           transition={{ duration: 0.25, ease: "easeOut" }}
           whileHover={{ y: -3 }}
           whileTap={{ scale: 0.92 }}
-          className="fixed bottom-9 right-6 sm:bottom-12 sm:right-8 z-50 flex items-center justify-center w-10 h-10 sm:w-10 sm:h-10 bg-[#6B4423] hover:bg-[#F5EDE0] text-[#FFFFFF] hover:text-[#6B4423] border border-[#D9C8A9] shadow-lg shadow-[#6B4423]/20 backdrop-blur-md transition-colors duration-300 group"
+          className="fixed bottom-9 right-6 sm:bottom-12 sm:right-8 z-50 flex items-center justify-center w-10 h-10 sm:w-10 sm:h-10 bg-[#21160e] hover:bg-[#F5EDE0] text-[#FFFFFF] hover:text-[#21160e] border border-[#D9C8A9] shadow-lg shadow-[#21160e]/20 backdrop-blur-md transition-colors duration-300 group"
         >
           <span className="absolute inset-0 bg-[#D9C8A9]/20 blur-lg -z-10 group-hover:bg-[#D9C8A9]/40 transition-colors" />
           <ArrowUp size={20} className="stroke-[2.5] transition-transform group-hover:-translate-y-0.5" />

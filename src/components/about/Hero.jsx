@@ -41,7 +41,7 @@ export default function AboutHero() {
         {/* Action Button */}
         <a
           href="/contact"
-          className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-none border border-[#D9C8A9]/50 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#FFFFFF] bg-gradient-to-r from-[#C8A96A] via-[#C8A96A] to-[#6B4423] hover:brightness-110 transition-all duration-300 shadow-xl hover:shadow-[0_12px_30px_rgba(217,200,169,0.3)] whitespace-nowrap"
+          className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-none border border-[#D9C8A9]/50 text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#FFFFFF] bg-gradient-to-r from-[#C8A96A] via-[#C8A96A] to-[#C8A96A] hover:brightness-110 transition-all duration-300 shadow-xl hover:shadow-[0_12px_30px_rgba(217,200,169,0.3)] whitespace-nowrap"
         >
           Book Your Dream Wedding
         </a>

@@ -17,7 +17,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative w-full h-[100dvh] min-h-[560px] overflow-hidden bg-[#6B4423] font-poppins">
+    <div className="relative w-full h-[100dvh] min-h-[560px] overflow-hidden bg-[#21160e] font-poppins">
       {/* Background Slideshow */}
       {bgImages.map((image, index) => (
         <div

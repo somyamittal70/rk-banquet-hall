@@ -71,7 +71,7 @@ export default function MeetOurTeam() {
     <section className="relative bg-[#F5EDE0] py-16 sm:py-20 lg:py-24 overflow-hidden font-poppins">
       {/* Ambient decoration */}
       <div className="absolute -left-24 -top-24 w-72 h-72 rounded-full bg-[#D9C8A9]/20 blur-3xl pointer-events-none" />
-      <div className="absolute -right-24 -bottom-24 w-72 h-72 rounded-full bg-[#6B4423]/10 blur-3xl pointer-events-none" />
+      <div className="absolute -right-24 -bottom-24 w-72 h-72 rounded-full bg-[#21160e]/10 blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-5 relative">
         {/* Heading */}
@@ -89,7 +89,7 @@ export default function MeetOurTeam() {
           </div>
 
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl text-[#6B4423]"
+            className="text-3xl sm:text-4xl md:text-5xl text-[#21160e]"
             style={{ fontFamily: "'Marcellus SC', serif" }}
           >
             Meet Our Team
@@ -116,9 +116,9 @@ export default function MeetOurTeam() {
               {/* Initial Letter Circle Avatar */}
               <div className="relative w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 sm:mb-5">
                 <div className="absolute inset-0 rounded-full border-2 border-dashed border-[#D9C8A9] group-hover:rotate-45 duration-700" />
-                <div className="absolute inset-[6px] rounded-full bg-[#F5EDE0] group-hover:bg-[#6B4423] transition-colors duration-500 flex items-center justify-center shadow-inner">
+                <div className="absolute inset-[6px] rounded-full bg-[#F5EDE0] group-hover:bg-[#21160e] transition-colors duration-500 flex items-center justify-center shadow-inner">
                   <span
-                    className="text-2xl sm:text-3xl font-bold text-[#6B4423] group-hover:text-white transition-colors duration-500 group-hover:scale-110 transform transition-transform"
+                    className="text-2xl sm:text-3xl font-bold text-[#21160e] group-hover:text-white transition-colors duration-500 group-hover:scale-110 transform transition-transform"
                     style={{ fontFamily: "'Marcellus SC', serif" }}
                   >
                     {member.name.charAt(0)}
@@ -141,15 +141,15 @@ export default function MeetOurTeam() {
               <div className="mt-4 sm:mt-5 flex items-center justify-center gap-3 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 sm:-translate-y-1 sm:group-hover:translate-y-0 duration-300">
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#6B4423] group/icon transition-colors"
+                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#21160e] group/icon transition-colors"
                 >
-                  <LinkedinIcon className="text-[#6B4423] group-hover/icon:text-white" />
+                  <LinkedinIcon className="text-[#21160e] group-hover/icon:text-white" />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#6B4423] group/icon transition-colors"
+                  className="w-8 h-8 rounded-full bg-[#F5EDE0] flex items-center justify-center hover:bg-[#21160e] group/icon transition-colors"
                 >
-                  <InstagramIcon className="text-[#6B4423] group-hover/icon:text-white" />
+                  <InstagramIcon className="text-[#21160e] group-hover/icon:text-white" />
                 </a>
               </div>
             </motion.div>
