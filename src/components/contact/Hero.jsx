@@ -140,40 +140,6 @@ export default function ContactHero() {
             </motion.span>
           </motion.button>
         </motion.div>
-
-        {/* Quick Contact Info Row */}
-        <motion.div
-          variants={infoRow}
-          className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 pt-4 text-[#F5EDE0]/80"
-        >
-          <motion.a
-            href="tel:+911234567890"
-            variants={infoItem}
-            whileHover={{ color: "#C8A96A" }}
-            className="flex items-center gap-2 text-xs sm:text-sm tracking-wide"
-          >
-            <PhoneCall className="w-4 h-4" />
-            <span>+91 12345 67890</span>
-          </motion.a>
-
-          <motion.a
-            href="mailto:hello@rkbanquethall.com"
-            variants={infoItem}
-            whileHover={{ color: "#C8A96A" }}
-            className="flex items-center gap-2 text-xs sm:text-sm tracking-wide"
-          >
-            <Mail className="w-4 h-4" />
-            <span>hello@rkbanquethall.com</span>
-          </motion.a>
-
-          <motion.span
-            variants={infoItem}
-            className="flex items-center gap-2 text-xs sm:text-sm tracking-wide"
-          >
-            <MapPin className="w-4 h-4" />
-            <span>Greater Noida, UP</span>
-          </motion.span>
-        </motion.div>
       </motion.div>
     </section>
   );
