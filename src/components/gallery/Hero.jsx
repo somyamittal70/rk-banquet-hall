@@ -127,7 +127,7 @@ export default function GalleryHero() {
 
             {/* Animated Arrow + Pulsing Line */}
             <div className="relative flex flex-col items-center">
-              <motion.div
+              {/* <motion.div
                 className="w-px h-8 bg-[#D9C8A9]/60 overflow-hidden relative"
                 variants={{ rest: {}, hover: {} }}
               >
@@ -136,7 +136,7 @@ export default function GalleryHero() {
                   animate={{ height: ["0%", "100%", "0%"], top: ["0%", "0%", "100%"] }}
                   transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
                 />
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 variants={{
                   rest: { backgroundColor: "#FFFFFF", color: "#D9C8A9", scale: 1 },
