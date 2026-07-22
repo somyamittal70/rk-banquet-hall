@@ -236,7 +236,7 @@ export default function GalleryGrid() {
     title: "Festive Season Celebration",
     location: "Celebration Lounge",
     image: "https://i.pinimg.com/control1/1200x/f5/91/36/f59136e88b4702f50e6a0c327c8e71de.jpg",
-    videoUrl: "https://www.pexels.com/download/video/10142920/",
+    videoUrl: "https://www.pexels.com/download/video/8811046/",
     span: "lg:col-span-4 lg:row-span-1",
   },
 ];

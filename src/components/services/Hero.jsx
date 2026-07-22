@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, ArrowUpRight } from "lucide-react";
-import backgroundImage from "/banner13.png";
+import backgroundImage from "/banner13.webp";
 
 export default function ServiceHero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);

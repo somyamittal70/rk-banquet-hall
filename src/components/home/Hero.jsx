@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, ArrowUpRight } from "lucide-react";
 
 // Replace these image paths with your actual asset locations
-const bgImages = ["/banner1.png", "/banner2.png", "/banner3.png"];
+const bgImages = ["/banner1.png", "/banner2.webp", "/banner3.webp"];
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);

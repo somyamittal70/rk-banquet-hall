@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, PhoneCall, MapPin, ArrowDown } from "lucide-react";
-import backgroundImage from "/banner15.png";
+import backgroundImage from "/banner15.webp";
 
 export default function ContactHero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);

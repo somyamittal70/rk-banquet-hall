@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowDown, Play } from "lucide-react";
-import backgroundImage from "/banner8.png"
+import backgroundImage from "/banner8.webp"
 
 export default function AboutHero() {
   // Replace this placeholder link with your premium high-resolution background video asset

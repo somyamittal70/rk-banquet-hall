@@ -129,7 +129,7 @@ export default function StorySection() {
                     viewport={{ once: true }}
                     className="relative group"
                   >
-                    <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-[#F5EDE0] border-2 border-[#D9C8A9] group-hover:bg-[#21160e] group-hover:border-[#21160e] duration-300" />
+                    <div className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-[#F5EDE0] border-2 border-[#D9C8A9] group-hover:bg-[#D9C8A9] group-hover:border-[#21160e] duration-300" />
 
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 shrink-0 rounded-full bg-white border border-[#D9C8A9] flex items-center justify-center">
