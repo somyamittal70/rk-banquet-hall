@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#F5EDE0]/30 font-poppins overflow-hidden">
+    <section className="relative bg-[#F5EDE0] py-24 lg:py-32  font-poppins overflow-hidden">
       {/* Background Decorative Ambient Glows */}
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-[#B08D57]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-[#21160e]/5 rounded-full blur-3xl pointer-events-none" />

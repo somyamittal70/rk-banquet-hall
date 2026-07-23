@@ -10,7 +10,7 @@ export default function ContactMap() {
   };
 
   return (
-    <section className="bg-white text-[#1A1A1A] font-poppins pb-24 border-b border-gray-100">
+    <section className="bg-[#F5EDE0]/30 text-[#1A1A1A] font-poppins pb-24 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Metadata Row */}

@@ -1,4 +1,5 @@
 import About from "../components/home/About";
+import CTASection from "../components/home/CTA";
 import Gallery from "../components/home/Gallery";
 import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
@@ -12,8 +13,9 @@ export default function HomePage() {
         <About />
         <Services />
         <Gallery />
-        <Testimonials />
         <WhyChooseUs />
+        <Testimonials />
+        <CTASection />
         </>
     )
 }

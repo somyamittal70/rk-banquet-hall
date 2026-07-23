@@ -3,7 +3,7 @@ import { Award, Users, Calendar, ArrowRight } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="relative bg-[#FFFFFF] text-[#21160e] font-poppins py-24 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
+    <section className="relative bg-[#F5EDE0]/30 text-[#21160e] font-poppins py-24 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
       {/* Background Subtle Glows */}
       <div className="absolute right-0 top-1/4 w-96 h-96 bg-[#D9C8A9]/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute left-0 bottom-1/4 w-96 h-96 bg-[#21160e]/5 rounded-full blur-3xl pointer-events-none" />

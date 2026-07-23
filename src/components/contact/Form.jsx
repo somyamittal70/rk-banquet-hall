@@ -21,7 +21,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="bg-white text-[#1A1A1A] font-poppins py-16 lg:py-24 border-t border-gray-100">
+    <section className="bg-[#F5EDE0]/30 text-[#1A1A1A] font-poppins py-16 lg:py-24 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">

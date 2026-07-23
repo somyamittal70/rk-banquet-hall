@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 // Replace these image paths with your actual asset locations
-const bgImages = ["/banner1.png", "/banner2.webp", "/banner3.webp"];
+const bgImages = ["/banner1.png", "/banner2.png", "/banner3.png"];
 
 // Orchestration: parent controls stagger timing, children just declare variants
 const container = {

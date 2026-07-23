@@ -80,7 +80,7 @@ export default function Gallery() {
       : galleryItems.filter((item) => item.category === activeFilter);
 
   return (
-    <section className="relative bg-[#FFFFFF] text-[#21160e] font-poppins py-24 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
+    <section className="relative bg-[#F5EDE0]/30 text-[#21160e] font-poppins py-24 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center flex flex-col items-center mb-16">

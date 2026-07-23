@@ -47,7 +47,7 @@ export default function Testimonials() {
     activeTab === "All" ? reviews : reviews.filter((r) => r.tag === activeTab);
 
   return (
-    <section className="relative bg-[#F5EDE0] text-[#21160e] font-poppins py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
+    <section className="relative bg-[#F5EDE0]/30 text-[#21160e] font-poppins py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#D9C8A9]">
       {/* Soft Ambient Background Orbs */}
       <div className="absolute top-0 right-10 w-80 h-80 bg-[#D9C8A9]/30 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#6B4423]/10 rounded-full blur-3xl pointer-events-none" />

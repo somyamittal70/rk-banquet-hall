@@ -9,8 +9,8 @@ export default function ContactPage() {
         <>
         <ContactHero />
         <ContactForm />
+        <FAQ/>
         <ContactMap />
-          <FAQ/>
         </>
     )
 }
