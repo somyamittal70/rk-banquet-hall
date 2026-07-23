@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import backgroundImage from "/banner13.png";
+import backgroundImage from "/banner13.webp";
 
 // Fallback structural image if video stream cuts or drops connection
 //   const backupFallbackImage = "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1920&q=80";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Film, Image as ImageIcon, ArrowDown } from "lucide-react";
-import backgroundImage from "/banner14.png";
+import backgroundImage from "/banner14.webp";
 
 // Orchestration: parent controls stagger timing, children just declare variants
 const container = {

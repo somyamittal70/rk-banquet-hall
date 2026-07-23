@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, PhoneCall, MapPin, ArrowDown } from "lucide-react";
-import backgroundImage from "/banner15.png";
+import backgroundImage from "/banner15.webp";
 
 // Orchestration: parent controls stagger timing, children just declare variants
 const container = {
